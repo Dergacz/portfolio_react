@@ -1,0 +1,30 @@
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background:
+          linear-gradient(rgba(17, 20, 24, .8), rgba(17, 20, 24, .8)),
+          url('http://demo.harnishdesign.net/html/simone/images/intro-bg.jpg') no-repeat fixed center 0;
+  background-size: cover;
+
+  &-hello {
+    font-weight: 500;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+
+  &-title {
+    font-weight: 600;
+    font-size: calc(1.525rem + 3.3vw) !important;
+    margin-bottom: 1rem;
+  }
+
+  &-subtitle {
+    font-weight: 400;
+    font-size: 1.3125rem;
+    margin-bottom: 1.5rem;
+  }
+}
