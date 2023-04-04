@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.wrapper {
+  background-color: $main-background;
+}
+
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -13,7 +17,13 @@ ul {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+  color: $white;
+}
+
 p,
+a,
 span,
 h1,
 h2,
