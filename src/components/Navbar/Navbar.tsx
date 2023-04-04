@@ -1,14 +1,20 @@
 import React from 'react';
+import * as constants from '../../constants/constants';
 
 export const Navbar = () => {
-    return (
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>What I Do</li>
-            <li>Resume</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
-        </ul>
-    );
+  return (
+    <ul className="navbar">
+      {
+        constants.NAVBAR_ITEMS.map(item => {
+          return (
+            <li className="navbar-item">
+              <a className="navbar-link" href={item.link}>
+                {item.title}
+              </a>
+            </li>
+          );
+        })
+      }
+    </ul>
+  );
 };

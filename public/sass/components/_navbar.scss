@@ -5,4 +5,22 @@
   top: 0;
   width: 100%;
   justify-content: center;
+
+  &-item {
+    margin-left: 2px;
+  }
+
+  &-link {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 0 0.85em;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+
+    &:hover,
+    &:active {
+      color: $main-green;
+    }
+  }
 }
