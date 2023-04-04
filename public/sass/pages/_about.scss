@@ -1,0 +1,52 @@
+.about {
+  min-height: 100vh;
+  padding: 72px 0;
+
+  &-description {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 60px;
+    margin-top: 50px;
+  }
+
+  &-text {
+    p {
+      --bs-text-opacity: 1;
+      color: $text;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &-title {
+    font-weight: 600;
+    font-size: 1.58rem;
+    margin-bottom: 1rem;
+  }
+
+  &-name {
+    color: $main-green;
+  }
+
+  &-info {
+
+    &-item {
+      padding: 12px 0;
+      border-bottom: 1px solid $gray-border;
+      color: $blur-white;
+
+      &:last-child {
+        border: none;
+      }
+
+      &-link {
+        color: $main-green;
+      }
+
+      &-title {
+        font-weight: 600;
+        color: $blur-white;
+      }
+    }
+  }
+}
