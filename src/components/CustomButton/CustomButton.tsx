@@ -1,13 +1,8 @@
 import React, { FC } from 'react';
+import { ICustomButton } from './CustomButton.style';
 
-interface ICustomButton {
-    title: string;
-}
-
-export const CustomButton: FC<ICustomButton> = ({
-    title
-}) => {
-    return (
-        <button className='button'>{title}</button>
-    );
+export const CustomButton: FC<ICustomButton> = ({ title, isFilled }) => {
+  return (
+    <button className={`button${isFilled ? '-filled' : ''}`}>{title}</button>
+  );
 };

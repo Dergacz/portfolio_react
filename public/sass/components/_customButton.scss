@@ -11,6 +11,28 @@
 
   &:hover {
     background: $main-green;
-    color: white;
+    color: $white;
+  }
+
+  &-filled {
+    background-color: $main-green;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    padding: 1.1rem 3rem;
+    font-weight: 600;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    border-radius: 30px;
+    cursor: pointer;
+    color: $white;
+
+    &:hover {
+      -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      -webkit-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      background-color: $main-green-hover;
+      border-color: $main-green-hover;
+    }
   }
 }
