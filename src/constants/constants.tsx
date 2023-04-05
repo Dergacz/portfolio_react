@@ -1,3 +1,5 @@
+import { DiReact } from 'react-icons/all';
+
 export const NAVBAR_ITEMS = [
   { title: 'Home', link: '/home' },
   { title: 'About', link: '/about' },
@@ -8,5 +10,10 @@ export const NAVBAR_ITEMS = [
 ];
 
 export const SKILLS_ITEMS = [
-  { title: 'graphic design', description: 'Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.'}
+  { title: 'graphic design', description: 'Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.', icon: <DiReact /> },
+  { title: 'graphic design', description: 'Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.', icon: <DiReact /> },
+  { title: 'graphic design', description: 'Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.', icon: <DiReact /> },
+  { title: 'graphic design', description: 'Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.', icon: <DiReact /> },
+  { title: 'graphic design', description: 'Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.', icon: <DiReact /> },
+  { title: 'graphic design', description: 'Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.', icon: <DiReact /> },
 ];
