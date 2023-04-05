@@ -1,0 +1,30 @@
+.skill {
+  display: flex;
+
+  &-image-wrapper {
+    min-width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+    border-radius: 7px;
+    background-color: $main-background;
+  }
+
+  &-description {
+    margin-left: 20px;
+
+    &-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+      font-weight: 500;
+      text-transform: capitalize;
+    }
+
+    &-text {
+      line-height: 1.8;
+      color: $text;
+    }
+  }
+}
