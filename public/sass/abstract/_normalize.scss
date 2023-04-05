@@ -5,11 +5,15 @@
 }
 
 .wrapper {
-  background-color: $main-background;
+  background-color: $secondary-background;
+
+  &:nth-child(2n) {
+    background-color: $main-background;
+  }
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
