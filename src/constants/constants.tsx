@@ -6,3 +6,7 @@ export const NAVBAR_ITEMS = [
   { title: 'Portfolio', link: '/portfolio' },
   { title: 'Contact', link: '/contact' }
 ];
+
+export const SKILLS_ITEMS = [
+  { title: 'graphic design', description: 'Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.'}
+];
