@@ -1,0 +1,33 @@
+.resume-item {
+  padding: 1.5rem;
+  background-color: $experience-background;
+  border-radius: 5px;
+  margin-bottom: 24px;
+
+  &-years {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 0.875rem;
+    padding: 0.15rem 0.35rem;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    background-color: $years-background;
+  }
+
+  &-title {
+    font-size: 1.3125rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
+  &-subtitle {
+    color: $main-green;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+
+  &-description {
+    color: $text;
+    line-height: 1.8;
+  }
+}
