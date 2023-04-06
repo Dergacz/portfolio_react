@@ -15,7 +15,7 @@
   }
 
   &-filled {
-    background-color: $main-green;
+    background: $main-green;
     border: none;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
     padding: 1.1rem 3rem;
@@ -27,12 +27,31 @@
     color: $white;
 
     &:hover {
+      background: $main-green-hover;
+      border-color: $main-green-hover;
       -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
       -webkit-transition: all 0.5s ease;
       transition: all 0.5s ease;
-      background-color: $main-green-hover;
-      border-color: $main-green-hover;
+    }
+  }
+
+  &-gray {
+    background: none;
+    border: 2px solid $header-title;
+    border-radius: 30px;
+    color: $header-title;
+    box-shadow: none;
+    padding: 0.8rem 2.6rem;
+    font-weight: 600;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    cursor: pointer;
+
+    &:hover {
+      background: $header-title;
+      border-color: $header-title;
+      color: $white;
     }
   }
 }
