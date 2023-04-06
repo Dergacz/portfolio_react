@@ -49,7 +49,7 @@ export const About = () => {
                   <span>Gdansk, Poland</span>
                 </li>
               </ul>
-              <CustomButton title="Dovnload CV" isFilled={true} />
+              <CustomButton title="Dovnload CV" isFilled={true} isGray={false} />
             </div>
           </div>
         </div>

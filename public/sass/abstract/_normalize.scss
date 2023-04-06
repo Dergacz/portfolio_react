@@ -6,6 +6,7 @@
 
 .wrapper {
   background-color: $secondary-background;
+  padding: 4.5rem 0;
 
   &:nth-child(2n) {
     background-color: $main-background;
