@@ -1,0 +1,35 @@
+.resume {
+  min-height: 100vh;
+
+  &-items {
+    padding: 0 24px;
+
+    &-wrapper {
+      display: flex;
+      margin-bottom: 24px;
+    }
+
+    &-title {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &-progress {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px 48px;
+    margin-bottom: 48px;
+
+    &-title {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &-button {
+    display: flex;
+    justify-content: center;
+  }
+}
