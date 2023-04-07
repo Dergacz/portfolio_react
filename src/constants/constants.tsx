@@ -32,3 +32,7 @@ export const PROGRESS_ITEMS = [
   { title: 'React', value: 80 },
   { title: 'React', value: 80 },
 ];
+
+export const PROJECTS = [
+  { title: 'Pokedex', image: {backgroundImage: 'url("../../Pokedex.png")'}, description: 'react, redux-toolkit, typeScript, SASS, RestAPI, webpack', gitHub: 'https://github.com/Dergacz/Pokemon_react', demo: 'https://master--thriving-khapse-aac99a.netlify.app/'},
+];
