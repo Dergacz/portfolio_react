@@ -1,11 +1,8 @@
 import React from 'react';
 import { Header } from '../../components/Header/Header';
 import {
-  AiFillGithub,
-  AiFillLinkedin,
   AiFillMail,
   AiFillPhone,
-  SiCodewars,
 } from 'react-icons/all';
 import { IconContext } from 'react-icons';
 import { CustomButton } from '../../components/CustomButton/CustomButton';
