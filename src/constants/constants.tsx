@@ -1,4 +1,5 @@
-import { DiReact } from 'react-icons/all';
+import { AiFillGithub, AiFillLinkedin, DiReact, SiCodewars } from 'react-icons/all';
+import React from 'react';
 
 export const NAVBAR_ITEMS = [
   { title: 'Home', link: '/home' },
@@ -34,5 +35,11 @@ export const PROGRESS_ITEMS = [
 ];
 
 export const PROJECTS = [
-  { title: 'Pokedex', image: {backgroundImage: 'url("../../Pokedex.png")'}, description: 'react, redux-toolkit, typeScript, SASS, RestAPI, webpack', gitHub: 'https://github.com/Dergacz/Pokemon_react', demo: 'https://master--thriving-khapse-aac99a.netlify.app/'},
+  { title: 'Pokedex', image: {backgroundImage: 'url("../../images/Pokedex.png")'}, description: 'react, redux-toolkit, typeScript, SASS, RestAPI, webpack', gitHub: 'https://github.com/Dergacz/Pokemon_react', demo: 'https://master--thriving-khapse-aac99a.netlify.app/'},
+];
+
+export const SOCIAL_MEDIA = [
+  { icon: <AiFillLinkedin />, link: 'https://www.linkedin.com/in/stanislau-dziarhach-6460aa20b/'},
+  { icon: <AiFillGithub />, link: 'https://github.com/Dergacz'},
+  { icon: <SiCodewars />, link: 'https://www.codewars.com/users/rsschool_87b244e540d672af'},
 ];
