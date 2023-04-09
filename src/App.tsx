@@ -5,6 +5,7 @@ import { Skills } from './pages/Skills/Skills';
 import { Resume } from './pages/Resume/Resume';
 import { Portfolio } from './pages/Portfolio/Portfolio';
 import { Contact } from './pages/Contact/Contact';
+import { Footer } from './pages/Footer/Footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Resume />
       <Portfolio />
       <Contact />
+      <Footer />
     </div>
   );
 }
