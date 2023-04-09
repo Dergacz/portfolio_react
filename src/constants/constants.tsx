@@ -1,4 +1,12 @@
-import { AiFillGithub, AiFillLinkedin, DiReact, SiCodewars } from 'react-icons/all';
+import {
+  AiFillGithub,
+  AiFillLinkedin,
+  AiFillMail,
+  AiFillPhone,
+  DiReact,
+  FaHouseUser,
+  SiCodewars
+} from 'react-icons/all';
 import React from 'react';
 
 export const NAVBAR_ITEMS = [
@@ -42,4 +50,10 @@ export const SOCIAL_MEDIA = [
   { icon: <AiFillLinkedin />, link: 'https://www.linkedin.com/in/stanislau-dziarhach-6460aa20b/'},
   { icon: <AiFillGithub />, link: 'https://github.com/Dergacz'},
   { icon: <SiCodewars />, link: 'https://www.codewars.com/users/rsschool_87b244e540d672af'},
+];
+
+export const CONTACT_INFO_ITEMS = [
+  { icon: <AiFillPhone />, title: '+48791112379' },
+  { icon: <AiFillMail />, title: 'sats96dergach@gmail.com' },
+  { icon: <FaHouseUser />, title: 'Gdansk, Poland' },
 ];
