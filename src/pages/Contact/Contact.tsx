@@ -1,9 +1,6 @@
 import React from 'react';
 import { Header } from '../../components/Header/Header';
-import {
-  AiFillMail,
-  AiFillPhone,
-} from 'react-icons/all';
+import { AiFillMail, AiFillPhone, FaHouseUser } from 'react-icons/all';
 import { IconContext } from 'react-icons';
 import { CustomButton } from '../../components/CustomButton/CustomButton';
 import * as constants from '../../constants/constants';
@@ -16,32 +13,18 @@ export const Contact = () => {
           <Header title="contact" subtitle="get in touch" />
           <div className="contact-wrapper">
             <div className="contact-info">
-              <h5>contact</h5>
+              <h5>LET'S GET IN TOUCH</h5>
               <IconContext.Provider value={{ color: '#20c997', size: '20px' }}>
-                <p className="contact-info-date">
-                  <span className="contact-info-icon">
-                    <AiFillPhone />
-                  </span>
-                  +48791112379
-                </p>
-                <p className="contact-info-date">
-                  <span className="contact-info-icon">
-                    <AiFillMail />
-                  </span>
-                  sats96dergach@gmail.com
-                </p>
-              </IconContext.Provider>
-              <h5>follow me</h5>
-              <IconContext.Provider value={{ size: '22px' }}>
-                <ul className="contact-info-media">
-                  {constants.SOCIAL_MEDIA.map((item) => {
-                    return (
-                      <li className="contact-info-media-item">
-                        <a href={item.link}>{item.icon}</a>
-                      </li>
-                    );
-                  })}
-                </ul>
+                {constants.CONTACT_INFO_ITEMS.map((item) => {
+                  return (
+                    <p className="contact-info-date">
+                      <span className="contact-info-icon">
+                        { item.icon }
+                      </span>
+                      { item.title }
+                    </p>
+                  );
+                })}
               </IconContext.Provider>
             </div>
             <div className="contact-form">
