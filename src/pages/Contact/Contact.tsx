@@ -1,6 +1,5 @@
 import React from 'react';
 import { Header } from '../../components/Header/Header';
-import { AiFillMail, AiFillPhone, FaHouseUser } from 'react-icons/all';
 import { IconContext } from 'react-icons';
 import { CustomButton } from '../../components/CustomButton/CustomButton';
 import * as constants from '../../constants/constants';
