@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+
+  &-copyright {
+    color: rgba(250, 250, 250, 0.8);
+    &-name {
+      color: $main-green;
+    }
+  }
+
+  &-media {
+    display: flex;
+
+    &-item {
+      margin-right: 10px;
+    }
+  }
+}
