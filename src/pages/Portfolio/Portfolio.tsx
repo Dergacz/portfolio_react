@@ -7,7 +7,7 @@ export const Portfolio = () => {
   return (
     <div className="wrapper">
       <div className="container">
-        <div className="portfolio">
+        <div className="portfolio" id="portfolio">
           <Header title="portfolio" subtitle="my work" />
           <div className="portfolio-projects">
             {constants.PROJECTS.map((project) => {

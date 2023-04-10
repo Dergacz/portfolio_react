@@ -8,7 +8,7 @@ export const Skills = () => {
   return (
     <div className="wrapper">
       <div className="container">
-        <div className="skills">
+        <div className="skills" id="whatIdo">
           <Header title="services" subtitle="what I do" />
           <IconContext.Provider value={{ size: '40px', color: '#20c997' }}>
             <div className="skills-wrapper">

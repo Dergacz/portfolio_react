@@ -9,7 +9,7 @@ export const Resume = () => {
   return (
     <div className="wrapper">
       <div className="container">
-        <div className="resume">
+        <div className="resume" id="resume">
           <Header title="summary" subtitle="resume" />
           <div className="resume-items-wrapper">
             <div className="resume-items">

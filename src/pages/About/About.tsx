@@ -6,7 +6,7 @@ export const About = () => {
   return (
     <div className="wrapper">
       <div className="container">
-        <div className="about">
+        <div className="about" id="about">
           <Header title="about me" subtitle="know me more" />
           <div className="about-description">
             <div className="about-text">

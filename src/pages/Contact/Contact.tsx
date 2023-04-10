@@ -8,7 +8,7 @@ export const Contact = () => {
   return (
     <div className="wrapper">
       <div className="container">
-        <div className="contact">
+        <div className="contact" id="contact">
           <Header title="contact" subtitle="get in touch" />
           <div className="contact-wrapper">
             <div className="contact-info">

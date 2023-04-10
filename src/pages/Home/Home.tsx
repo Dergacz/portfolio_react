@@ -4,7 +4,7 @@ import { Navbar } from '../../components/Navbar/Navbar';
 
 export const Home = () => {
   return (
-    <div className="home">
+    <div className="home" id="home">
       <Navbar />
       <p className="home-hello">Welcome</p>
       <h1 className="home-title">I'm Frontend developer</h1>
