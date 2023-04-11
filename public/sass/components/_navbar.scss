@@ -6,6 +6,16 @@
   width: 100%;
   justify-content: center;
 
+  &-animation {
+    animation: fade-out 500ms forwards;
+  }
+
+  &-fixed {
+    position: fixed;
+    background-color: $navbar-background;
+    z-index: 100;
+  }
+
   &-item {
     margin-left: 2px;
   }
