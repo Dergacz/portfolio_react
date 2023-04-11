@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import * as constants from '../../constants/constants';
 import { Link } from 'react-scroll';
-import { INavbar } from './Navnar.types';
+import { INavbar } from './Navbar.types';
 
 export const Navbar: FC<INavbar> = ({ scroll }) => {
   return (
