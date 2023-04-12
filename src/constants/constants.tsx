@@ -54,6 +54,10 @@ export const SOCIAL_MEDIA = [
 
 export const CONTACT_INFO_ITEMS = [
   { icon: <AiFillPhone />, title: '+48791112379' },
-  { icon: <AiFillMail />, title: 'sats96dergach@gmail.com' },
+  { icon: <AiFillMail />, title: 'stanislav.dergach@gmail.com' },
   { icon: <FaHouseUser />, title: 'Gdansk, Poland' },
 ];
+
+export const SERVICE_ID = 'service_xoiqhbi';
+export const TEMPLATE_ID = 'template_ue0n2qy';
+export const PUBLIC_KEY = 'ionYqzX6dV4DjfMu2';

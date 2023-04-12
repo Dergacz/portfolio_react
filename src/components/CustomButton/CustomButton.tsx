@@ -2,7 +2,13 @@ import React, { FC } from 'react';
 import { ICustomButton } from './CustomButton.style';
 import { ImDownload3 } from 'react-icons/all';
 
-export const CustomButton: FC<ICustomButton> = ({ title, isFilled = false, isGray = false }) => {
+export const CustomButton: FC<ICustomButton> = ({
+  title,
+  onClick,
+  type,
+  isFilled = false,
+  isGray = false,
+}) => {
   const checkStyle = (filled: boolean, gray: boolean) => {
     if (filled) {
       return '-filled';
@@ -13,11 +19,13 @@ export const CustomButton: FC<ICustomButton> = ({ title, isFilled = false, isGra
   };
 
   return (
-    <button className={`button${checkStyle(isFilled, isGray)}`}>
+    <button
+      className={`button${checkStyle(isFilled, isGray)}`}
+      onClick={onClick}
+      type={type}
+    >
       {title}
-      {
-        isGray && <ImDownload3 style={{ marginLeft: '10px' }}/>
-      }
+      {isGray && <ImDownload3 style={{ marginLeft: '10px' }} />}
     </button>
   );
 };

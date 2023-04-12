@@ -33,10 +33,6 @@
   &-form {
     width: 75%;
 
-    &-wrapper {
-      margin-bottom: 1.5rem;
-    }
-
     &-inputs {
       display: flex;
       justify-content: space-between;
@@ -76,6 +72,7 @@
       max-width: 100%;
       min-width: 100%;
       min-height: 100%;
+      margin-bottom: 1.5rem;
     }
 
     &-button {

@@ -3,8 +3,30 @@ import { Header } from '../../components/Header/Header';
 import { IconContext } from 'react-icons';
 import { CustomButton } from '../../components/CustomButton/CustomButton';
 import * as constants from '../../constants/constants';
+import emailjs from '@emailjs/browser';
 
 export const Contact = () => {
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        constants.SERVICE_ID,
+        constants.TEMPLATE_ID,
+        e.target,
+        constants.PUBLIC_KEY
+      )
+      .then(
+        (result) => {},
+        (error) => {}
+      );
+    e.target.reset();
+
+    const timeOutID = setTimeout(() => {}, 5000);
+    return () => {
+      clearTimeout(timeOutID);
+    };
+  };
+
   return (
     <div className="wrapper">
       <div className="container">
@@ -17,10 +39,8 @@ export const Contact = () => {
                 {constants.CONTACT_INFO_ITEMS.map((item) => {
                   return (
                     <p className="contact-info-date">
-                      <span className="contact-info-icon">
-                        { item.icon }
-                      </span>
-                      { item.title }
+                      <span className="contact-info-icon">{item.icon}</span>
+                      {item.title}
                     </p>
                   );
                 })}
@@ -29,19 +49,19 @@ export const Contact = () => {
             <div className="contact-form">
               <h5>send us a note</h5>
               <div className="contact-form-wrapper">
-                <form action="">
+                <form onSubmit={(e) => sendEmail(e)}>
                   <div className="contact-form-inputs">
                     <input
                       className="contact-form-input"
                       type="text"
-                      name="name"
+                      name="user_name"
                       placeholder="Name"
                       required
                     />
                     <input
                       className="contact-form-input"
                       type="email"
-                      name="email"
+                      name="user_email"
                       placeholder="Email"
                       required
                     />
@@ -50,16 +70,18 @@ export const Contact = () => {
                     className="contact-form-textarea"
                     rows={5}
                     placeholder="Year message........."
+                    name="message"
                     required
                   />
+                  <div className="contact-form-button">
+                    <CustomButton
+                      type="submit"
+                      title="Send Message"
+                      isFilled={true}
+                      isGray={false}
+                    />
+                  </div>
                 </form>
-              </div>
-              <div className="contact-form-button">
-                <CustomButton
-                  title="Send Message"
-                  isFilled={true}
-                  isGray={false}
-                />
               </div>
             </div>
           </div>
