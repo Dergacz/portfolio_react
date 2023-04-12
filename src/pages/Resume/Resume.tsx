@@ -4,6 +4,7 @@ import { ResumeItem } from '../../components/ResumeItem/ResumeItem';
 import * as constants from '../../constants/constants';
 import LinearProgressWithProgress from '@mui/material/LinearProgress';
 import { CustomButton } from '../../components/CustomButton/CustomButton';
+import { onDownloadCV } from '../../utils/downloadCV';
 
 export const Resume = () => {
   return (
@@ -67,6 +68,7 @@ export const Resume = () => {
           <div className="resume-button">
             <CustomButton
               title={'Download CV'}
+              onClick={onDownloadCV}
               isFilled={false}
               isGray={true}
             />

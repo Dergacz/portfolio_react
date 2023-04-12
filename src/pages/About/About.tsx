@@ -1,6 +1,7 @@
 import React from 'react';
 import { Header } from '../../components/Header/Header';
 import { CustomButton } from '../../components/CustomButton/CustomButton';
+import { onDownloadCV } from '../../utils/downloadCV';
 
 export const About = () => {
   return (
@@ -16,9 +17,9 @@ export const About = () => {
               </h4>
               <p>
                 I help you build brand for your business at an affordable price.
-                Thousands of clients have procured exceptional results while working
-                with our dedicated team. when an unknown printer took a galley of
-                type and scrambled it to make a type specimen book.
+                Thousands of clients have procured exceptional results while
+                working with our dedicated team. when an unknown printer took a
+                galley of type and scrambled it to make a type specimen book.
               </p>
               <p>
                 Delivering work within time and budget which meets client’s
@@ -36,7 +37,9 @@ export const About = () => {
                 <li className="about-info-item">
                   <span className="about-info-item-title">Email:</span>
                   &#32;
-                  <a className="about-info-item-link" href="#">sats96dergach@gmail.com</a>
+                  <a className="about-info-item-link" href="#">
+                    stanislav.dergach@gmail.com
+                  </a>
                 </li>
                 <li className="about-info-item">
                   <span className="about-info-item-title">Age:</span>
@@ -49,7 +52,12 @@ export const About = () => {
                   <span>Gdansk, Poland</span>
                 </li>
               </ul>
-              <CustomButton title="Dovnload CV" isFilled={true} isGray={false} />
+              <CustomButton
+                onClick={onDownloadCV}
+                title="Dovnload CV"
+                isFilled={true}
+                isGray={false}
+              />
             </div>
           </div>
         </div>
