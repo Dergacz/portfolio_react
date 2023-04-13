@@ -54,7 +54,7 @@ export const SOCIAL_MEDIA = [
 
 export const CONTACT_INFO_ITEMS = [
   { icon: <AiFillPhone />, title: '+48791112379' },
-  { icon: <AiFillMail />, title: 'stanislav.dergach@gmail.com' },
+  { icon: <AiFillMail />, title: 'stanislav.dziarhach@gmail.com' },
   { icon: <FaHouseUser />, title: 'Gdansk, Poland' },
 ];
 

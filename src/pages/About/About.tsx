@@ -37,8 +37,8 @@ export const About = () => {
                 <li className="about-info-item">
                   <span className="about-info-item-title">Email:</span>
                   &#32;
-                  <a className="about-info-item-link" href="#">
-                    stanislav.dergach@gmail.com
+                  <a className="about-info-item-link" href="mailto:stanislav.dziarhach@gmail.com">
+                    stanislav.dziarhach@gmail.com
                   </a>
                 </li>
                 <li className="about-info-item">
