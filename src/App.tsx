@@ -1,5 +1,4 @@
 import '../public/sass/main.scss';
-import { Home } from './pages/Home/Home';
 import { About } from './pages/About/About';
 import { Skills } from './pages/Skills/Skills';
 import { Resume } from './pages/Resume/Resume';
@@ -9,6 +8,7 @@ import { Footer } from './pages/Footer/Footer';
 import React, { useEffect, useState } from 'react';
 import { IoIosArrowUp } from 'react-icons/all';
 import { Link } from 'react-scroll';
+import { SecondHome } from './pages/SecondHome/SecondHome';
 
 function App() {
   const [scroll, setScroll] = useState<number>(0);
@@ -23,7 +23,8 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <Home scroll={scroll} />
+      {/*<Home scroll={scroll} />*/}
+      <SecondHome scroll={scroll} />
       <About />
       <Skills />
       <Resume />
