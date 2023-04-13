@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Header } from '../../components/Header/Header';
 import { IconContext } from 'react-icons';
 import { CustomButton } from '../../components/CustomButton/CustomButton';
 import * as constants from '../../constants/constants';
 import emailjs from '@emailjs/browser';
+import { CustomSnackbar } from '../../components/CustomSnackbar/CustomSnackbar';
 
 export const Contact = () => {
+  const [isOpenSnackbar, setIsOpenSnackbar] = useState<boolean>(false);
+  const [isSuccess, setIsSuccess] = useState<boolean>(false);
+
+  const handleClose = (event?: React.SyntheticEvent | Event, reason?: string) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+    setIsOpenSnackbar(false);
+  };
+
   const sendEmail = (e: any) => {
     e.preventDefault();
     emailjs
@@ -16,8 +27,14 @@ export const Contact = () => {
         constants.PUBLIC_KEY
       )
       .then(
-        (result) => {},
-        (error) => {}
+        (result) => {
+          setIsSuccess(true);
+          setIsOpenSnackbar(true);
+        },
+        (error) => {
+          setIsSuccess(false);
+          setIsOpenSnackbar(true);
+        }
       );
     e.target.reset();
 
@@ -82,6 +99,11 @@ export const Contact = () => {
                     />
                   </div>
                 </form>
+                <CustomSnackbar
+                  isOpen={isOpenSnackbar}
+                  handleClose={handleClose}
+                  isSuccess={isSuccess}
+                />
               </div>
             </div>
           </div>
