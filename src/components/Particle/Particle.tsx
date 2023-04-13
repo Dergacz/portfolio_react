@@ -1,19 +1,12 @@
 import React, { useCallback } from 'react';
 import Particles from 'react-particles';
-import type { Container, Engine } from 'tsparticles-engine';
+import type { Engine } from 'tsparticles-engine';
 import { loadFull } from 'tsparticles';
 
 export const Particle = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadFull(engine);
   }, []);
-
-  const particlesLoaded = useCallback(
-    async (container: Container | undefined) => {
-      await console.log(container);
-    },
-    []
-  );
 
   const options = {
     background: {
@@ -87,7 +80,6 @@ export const Particle = () => {
       className="particle"
       id="tsparticles"
       init={particlesInit}
-      loaded={particlesLoaded}
       options={options}
     />
   );
