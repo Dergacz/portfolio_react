@@ -5,6 +5,7 @@ import { CustomButton } from '../../components/CustomButton/CustomButton';
 import * as constants from '../../constants/constants';
 import emailjs from '@emailjs/browser';
 import { CustomSnackbar } from '../../components/CustomSnackbar/CustomSnackbar';
+import { Zoom } from 'react-awesome-reveal';
 
 export const Contact = () => {
   const [isOpenSnackbar, setIsOpenSnackbar] = useState<boolean>(false);
@@ -47,67 +48,69 @@ export const Contact = () => {
   return (
     <div className="wrapper">
       <div className="container">
-        <div className="contact" id="contact">
-          <Header title="contact" subtitle="get in touch" />
-          <div className="contact-wrapper">
-            <div className="contact-info">
-              <h5>LET'S GET IN TOUCH</h5>
-              <IconContext.Provider value={{ color: '#20c997', size: '20px' }}>
-                {constants.CONTACT_INFO_ITEMS.map((item) => {
-                  return (
-                    <p className="contact-info-date">
-                      <span className="contact-info-icon">{item.icon}</span>
-                      {item.title}
-                    </p>
-                  );
-                })}
-              </IconContext.Provider>
-            </div>
-            <div className="contact-form">
-              <h5>send us a note</h5>
-              <div className="contact-form-wrapper">
-                <form onSubmit={(e) => sendEmail(e)}>
-                  <div className="contact-form-inputs">
-                    <input
-                      className="contact-form-input"
-                      type="text"
-                      name="user_name"
-                      placeholder="Name"
+        <Zoom cascade triggerOnce>
+          <div className="contact" id="contact">
+            <Header title="contact" subtitle="get in touch" />
+            <div className="contact-wrapper">
+              <div className="contact-info">
+                <h5>LET'S GET IN TOUCH</h5>
+                <IconContext.Provider value={{ color: '#20c997', size: '20px' }}>
+                  {constants.CONTACT_INFO_ITEMS.map((item) => {
+                    return (
+                      <p className="contact-info-date">
+                        <span className="contact-info-icon">{item.icon}</span>
+                        {item.title}
+                      </p>
+                    );
+                  })}
+                </IconContext.Provider>
+              </div>
+              <div className="contact-form">
+                <h5>send us a note</h5>
+                <div className="contact-form-wrapper">
+                  <form onSubmit={(e) => sendEmail(e)}>
+                    <div className="contact-form-inputs">
+                      <input
+                        className="contact-form-input"
+                        type="text"
+                        name="user_name"
+                        placeholder="Name"
+                        required
+                      />
+                      <input
+                        className="contact-form-input"
+                        type="email"
+                        name="user_email"
+                        placeholder="Email"
+                        required
+                      />
+                    </div>
+                    <textarea
+                      className="contact-form-textarea"
+                      rows={5}
+                      placeholder="Your message........."
+                      name="message"
                       required
                     />
-                    <input
-                      className="contact-form-input"
-                      type="email"
-                      name="user_email"
-                      placeholder="Email"
-                      required
-                    />
-                  </div>
-                  <textarea
-                    className="contact-form-textarea"
-                    rows={5}
-                    placeholder="Your message........."
-                    name="message"
-                    required
+                    <div className="contact-form-button">
+                      <CustomButton
+                        type="submit"
+                        title="Send Message"
+                        isFilled={true}
+                        isGray={false}
+                      />
+                    </div>
+                  </form>
+                  <CustomSnackbar
+                    isOpen={isOpenSnackbar}
+                    handleClose={handleClose}
+                    isSuccess={isSuccess}
                   />
-                  <div className="contact-form-button">
-                    <CustomButton
-                      type="submit"
-                      title="Send Message"
-                      isFilled={true}
-                      isGray={false}
-                    />
-                  </div>
-                </form>
-                <CustomSnackbar
-                  isOpen={isOpenSnackbar}
-                  handleClose={handleClose}
-                  isSuccess={isSuccess}
-                />
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </Zoom>
       </div>
     </div>
   );
