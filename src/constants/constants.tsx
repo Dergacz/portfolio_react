@@ -49,7 +49,7 @@ export const PROJECTS = [
 export const SOCIAL_MEDIA = [
   { icon: <AiFillLinkedin />, link: 'https://www.linkedin.com/in/stanislau-dziarhach-6460aa20b/'},
   { icon: <AiFillGithub />, link: 'https://github.com/Dergacz'},
-  { icon: <SiCodewars />, link: 'https://www.codewars.com/users/rsschool_87b244e540d672af'},
+  { icon: <SiCodewars />, link: 'https://www.codewars.com/users/Dergacz'},
 ];
 
 export const CONTACT_INFO_ITEMS = [
