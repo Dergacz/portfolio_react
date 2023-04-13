@@ -5,6 +5,7 @@
   top: 0;
   width: 100%;
   justify-content: center;
+  z-index: 2;
 
   &-animation {
     animation: fade-out 500ms forwards;
