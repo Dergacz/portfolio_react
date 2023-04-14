@@ -60,9 +60,9 @@ export const Resume = () => {
                         height: '0.5rem',
                         backgroundColor: '#111418',
                         borderRadius: '5px',
-                        '.css-5xe99f-MuiLinearProgress-bar1': {
-                          backgroundColor: '#20c997',
-                        },
+                        '& .MuiLinearProgress-bar': {
+                          backgroundColor: '#20c997'
+                        }
                       }}
                     />
                   </div>
