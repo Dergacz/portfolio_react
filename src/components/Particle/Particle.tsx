@@ -8,7 +8,7 @@ export const Particle = () => {
     await loadFull(engine);
   }, []);
 
-  const options = {
+  const options: any = {
     background: {
       color: '#282c34',
     },
@@ -60,7 +60,7 @@ export const Particle = () => {
         density: {
           enable: true,
         },
-        value: 150,
+        value: 100,
       },
       opacity: {
         value: 0.2,

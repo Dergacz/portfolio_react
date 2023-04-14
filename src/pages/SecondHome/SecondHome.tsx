@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import { Navbar } from '../../components/Navbar/Navbar';
 import ReactTypingEffect from 'react-typing-effect';
 import { Link } from 'react-scroll';
 import { CustomButton } from '../../components/CustomButton/CustomButton';
@@ -8,6 +7,7 @@ import { IHome } from '../Home/Home.types';
 import { Particle } from '../../components/Particle/Particle';
 import photo from '../../../public/images/photo.jpg';
 import { Tilt } from 'react-tilt';
+import { Navbar } from '../../components/Navbar/Navbar';
 
 export const SecondHome: FC<IHome> = ({ scroll }) => {
   return (
@@ -47,9 +47,9 @@ export const SecondHome: FC<IHome> = ({ scroll }) => {
             </Link>
           </div>
           <div className="second-home-photo">
-            <Tilt option={{ max: '25' }} style={{ position: 'relative'}}>
-              <span className="second-home-photo-border"/>
-              <img src={photo} alt="my_photo" width={350}/>
+            <Tilt option={{ max: '25' }} style={{ position: 'relative' }}>
+              <span className="second-home-photo-border" />
+              <img src={photo} alt="my_photo" />
             </Tilt>
           </div>
           <Link
@@ -70,6 +70,5 @@ export const SecondHome: FC<IHome> = ({ scroll }) => {
         </div>
       </div>
     </>
-
   );
 };
