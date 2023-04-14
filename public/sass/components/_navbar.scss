@@ -20,14 +20,12 @@
     width: 99%;
   }
 
-  &-animation {
-    animation: fade-out 500ms forwards;
-  }
-
   &-fixed {
     position: fixed;
     background-color: $navbar-background;
     z-index: 5;
+    transition: .6s;
+    transform: translate(0, 0);
   }
 
   &-item {
