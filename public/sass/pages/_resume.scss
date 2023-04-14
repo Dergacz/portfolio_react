@@ -2,7 +2,12 @@
   min-height: 100vh;
 
   &-items {
+    width: 50%;
     padding: 0 24px;
+
+    @include mobile {
+      width: 100%;
+    }
 
     &-wrapper {
       display: flex;
