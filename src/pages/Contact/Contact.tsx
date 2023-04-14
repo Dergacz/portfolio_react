@@ -28,11 +28,11 @@ export const Contact = () => {
         constants.PUBLIC_KEY
       )
       .then(
-        (result) => {
+        () => {
           setIsSuccess(true);
           setIsOpenSnackbar(true);
         },
-        (error) => {
+        () => {
           setIsSuccess(false);
           setIsOpenSnackbar(true);
         }
@@ -57,7 +57,7 @@ export const Contact = () => {
                 <IconContext.Provider value={{ color: '#20c997', size: '20px' }}>
                   {constants.CONTACT_INFO_ITEMS.map((item) => {
                     return (
-                      <p className="contact-info-date">
+                      <p className="contact-info-date" key={item.title}>
                         <span className="contact-info-icon">{item.icon}</span>
                         {item.title}
                       </p>
@@ -66,7 +66,7 @@ export const Contact = () => {
                 </IconContext.Provider>
               </div>
               <div className="contact-form">
-                <h5>send us a note</h5>
+                <h5>send me a note</h5>
                 <div className="contact-form-wrapper">
                   <form onSubmit={(e) => sendEmail(e)}>
                     <div className="contact-form-inputs">

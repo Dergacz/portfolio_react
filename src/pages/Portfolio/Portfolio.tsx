@@ -15,6 +15,7 @@ export const Portfolio = () => {
               {constants.PROJECTS.map((project) => {
                 return (
                   <Project
+                    key={project.title}
                     title={project.title}
                     description={project.description}
                     image={project.image}

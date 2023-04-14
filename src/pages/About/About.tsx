@@ -18,15 +18,11 @@ export const About = () => {
                   Frontend Developer
                 </h4>
                 <p>
-                  I help you build brand for your business at an affordable price.
-                  Thousands of clients have procured exceptional results while
-                  working with our dedicated team. when an unknown printer took a
-                  galley of type and scrambled it to make a type specimen book.
+                  I am an experienced Frontend developer with 2.5 years of work experience. I have skills in HTML, CSS, JavaScript, and frameworks such as React, as well as proficiency in using Git. I am fluent in several languages, and I self improve every day.
                 </p>
                 <p>
-                  Delivering work within time and budget which meets client’s
-                  requirements is our moto. Lorem Ipsum has been the industry's
-                  standard dummy text ever when an unknown printer took a galley.
+                  I aim to help you bring all your ideas to life. I believe my professional skills and experience can make a valuable contribution to achieving business goals.
+                  I use new IT tools in my projects and if any difficulty arises, I overcome it easily. Always focused on results - that's my motto.
                 </p>
               </div>
               <div about="about-info">

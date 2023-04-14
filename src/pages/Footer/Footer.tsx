@@ -10,7 +10,7 @@ export const Footer = () => {
         <Zoom cascade triggerOnce>
           <footer className="footer">
             <p className="footer-copyright">
-              Copyright © 2022{' '}
+              Copyright © 2023{' '}
               <span className="footer-copyright-name">
                 Stanislau Dziarhach.
               </span>{' '}
@@ -23,7 +23,7 @@ export const Footer = () => {
                 <ul className="footer-media">
                   {constants.SOCIAL_MEDIA.map((item) => {
                     return (
-                      <li className="footer-media-item">
+                      <li className="footer-media-item" key={item.link}>
                         <a href={item.link} target="_blank" rel="noreferrer">
                           {item.icon}
                         </a>

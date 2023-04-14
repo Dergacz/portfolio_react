@@ -10,6 +10,7 @@ export const Home: FC<IHome> = ({ scroll }) => {
   return (
     <div className="home" id="home">
       <Navbar scroll={scroll} />
+      {/*<BurgerNavbar scroll={scroll} />*/}
       <p className="home-hello">Welcome</p>
       <h1 className="home-title">
         I'm&#32;

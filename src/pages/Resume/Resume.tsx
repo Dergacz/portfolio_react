@@ -17,9 +17,10 @@ export const Resume = () => {
             <div className="resume-items-wrapper">
               <div className="resume-items">
                 <h4 className="resume-items-title">My Education</h4>
-                {constants.RESUME_ITEMS.map((item) => {
+                {constants.EDUCATION_ITEMS.map((item) => {
                   return (
                     <ResumeItem
+                      key={item.subtitle}
                       years={item.years}
                       title={item.title}
                       subtitle={item.subtitle}
@@ -30,9 +31,10 @@ export const Resume = () => {
               </div>
               <div className="resume-items">
                 <h4 className="resume-items-title">My Experience</h4>
-                {constants.RESUME_ITEMS.map((item) => {
+                {constants.WORK_ITEMS.map((item) => {
                   return (
                     <ResumeItem
+                      key={item.subtitle}
                       years={item.years}
                       title={item.title}
                       subtitle={item.subtitle}

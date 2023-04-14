@@ -17,6 +17,7 @@ export const Skills = () => {
                 {constants.SKILLS_ITEMS.map((skill) => {
                   return (
                     <Skill
+                      key={skill.title}
                       title={skill.title}
                       description={skill.description}
                       icon={skill.icon}
