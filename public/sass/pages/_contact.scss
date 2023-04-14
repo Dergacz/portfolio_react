@@ -4,6 +4,10 @@
   &-wrapper {
     display: flex;
     justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   h5 {
@@ -34,10 +38,18 @@
   &-form {
     width: 75%;
 
+    @include mobile {
+      width: 100%;
+    }
+
     &-inputs {
       display: flex;
       justify-content: space-between;
       margin-bottom: 1.5rem;
+
+      @include mobile {
+        flex-direction: column;
+      }
     }
 
     &-input,
@@ -67,6 +79,14 @@
 
     &-input {
       width: 48%;
+
+      @include mobile {
+        width: 100%;
+
+        &:first-child {
+          margin-bottom: 1.5rem;
+        }
+      }
     }
 
     &-textarea {

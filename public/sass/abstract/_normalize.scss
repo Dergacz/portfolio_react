@@ -4,18 +4,36 @@
   box-sizing: border-box;
 }
 
+.App {
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
 .wrapper {
-  background-color: $main-background;
+  background-color: $secondary-background;
   padding: 4.5rem 0;
 
   &:nth-child(2n) {
-    background-color: $secondary-background;
+    background-color: $main-background;
   }
 }
 
 .container {
   max-width: 1140px;
   margin: 0 auto;
+
+  @include laptop {
+    max-width: 900px;
+  }
+
+  @include tablet {
+    max-width: 700px;
+  }
+
+  @include mobile {
+    max-width: 300px;
+  }
+
 }
 
 ul {

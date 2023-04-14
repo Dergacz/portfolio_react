@@ -7,6 +7,10 @@
     &-wrapper {
       display: flex;
       margin-bottom: 24px;
+
+      @include mobile {
+        flex-direction: column;
+      }
     }
 
     &-title {
@@ -20,6 +24,11 @@
     grid-template-columns: 1fr 1fr;
     gap: 24px 48px;
     margin-bottom: 48px;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
 
     &-title {
       display: flex;

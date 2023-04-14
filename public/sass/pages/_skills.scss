@@ -1,9 +1,14 @@
 .skills {
-  height: 100vh;
+  min-height: 100vh;
 
   &-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 48px 24px;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

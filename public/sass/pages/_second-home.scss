@@ -6,14 +6,36 @@
   position: relative;
   background-size: cover;
 
+  @include mobile {
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
   &-description {
     width: 60%;
+
+    @include mobile {
+      width: 100%;
+    }
   }
 
   &-photo {
     width: 40%;
     display: flex;
     justify-content: flex-end;
+
+    @include mobile {
+      width: 60%;
+    }
+
+    img {
+      width: 300px;
+
+      @include mobile {
+        width: 200px;
+      }
+    }
 
     &-border {
       position: absolute;
@@ -41,6 +63,14 @@
     margin-bottom: 1rem;
     white-space: nowrap;
     overflow: hidden;
+
+    @include tablet {
+      font-size: calc(1.325rem + 0.3vw);
+    }
+
+    @include mobile {
+      font-size: calc(1.325rem + 0.3vw);
+    }
   }
 
   &-subtitle {
