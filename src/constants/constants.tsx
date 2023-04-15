@@ -134,11 +134,11 @@ export const PROJECTS = [
     demo: 'https://master--thriving-khapse-aac99a.netlify.app/',
   },
   {
-    title: 'TodoList',
-    image: { backgroundImage: 'url("../../images/Pokedex.png")' },
-    description: 'react, redux, typeScript, storybook, MaterialUi, RestAPI',
-    gitHub: 'https://github.com/Dergacz/todolist2.0',
-    demo: 'https://master--thriving-khapse-aac99a.netlify.app/',
+    title: 'Wordpress layout',
+    image: { backgroundImage: 'url("../../images/wordpress.png")' },
+    description: 'HTML, CSS',
+    gitHub: 'https://github.com/Dergacz/wordpress-layout',
+    demo: 'https://incredible-dragon-c27084.netlify.app',
   },
 ];
 
