@@ -1,5 +1,5 @@
 .project {
-  min-width: 300px;
+  width: 360px;
   height: 280px;
   margin: 15px;
   position: relative;
@@ -9,6 +9,10 @@
   background-repeat: no-repeat;
   transition: 0.5s ease-in-out;
   border-radius: 5px;
+
+  @include mobile {
+    width: auto;
+  }
 
   &-curtain {
     position: absolute;

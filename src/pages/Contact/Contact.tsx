@@ -88,7 +88,7 @@ export const Contact = () => {
                     <textarea
                       className="contact-form-textarea"
                       rows={5}
-                      placeholder="Your message........."
+                      placeholder="Your message..."
                       name="message"
                       required
                     />
