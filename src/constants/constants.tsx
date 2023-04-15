@@ -3,9 +3,14 @@ import {
   AiFillLinkedin,
   AiFillMail,
   AiFillPhone,
-  DiReact,
+  AiOutlineTeam,
   FaHouseUser,
-  SiCodewars, SiRedux
+  SiCodewars,
+  SiJest,
+  SiReact,
+  SiRedux,
+  SiSass,
+  SiTypescript,
 } from 'react-icons/all';
 import React from 'react';
 
@@ -21,15 +26,36 @@ export const NAVBAR_ITEMS = [
 export const SKILLS_ITEMS = [
   {
     title: 'react',
-    description:
-      'I create modern applications using React.',
-    icon: <DiReact />,
+    description: 'I create modern applications using React.',
+    icon: <SiReact />,
   },
   {
     title: 'redux',
     description:
       'In my projects I use state manager redux. I have commercial experience with Redux-saga, Redux-toolkit.',
     icon: <SiRedux />,
+  },
+  {
+    title: 'SASS',
+    description: 'I write styles using modern preprocessors.',
+    icon: <SiSass />,
+  },
+  {
+    title: 'TypeScript',
+    description:
+      'I use TypeScript for better readability of code extensibility',
+    icon: <SiTypescript />,
+  },
+  {
+    title: 'Jest',
+    description: 'I cover all my projects with tests.',
+    icon: <SiJest />,
+  },
+  {
+    title: 'team player',
+    description:
+      'I like teamwork, I believe that only in a team can you achieve great success.',
+    icon: <AiOutlineTeam />,
   },
 ];
 
@@ -44,7 +70,8 @@ export const EDUCATION_ITEMS = [
   {
     title: 'Automation Engineer',
     subtitle: 'Belarusian-Russian University',
-    description: 'History and current state of production automation, basic technical means of automation, principles and methods of designing automated systems, programming in high-level languages, theory of electrical circuits, development of robot control systems, organization of production activities',
+    description:
+      'History and current state of production automation, basic technical means of automation, principles and methods of designing automated systems, programming in high-level languages, theory of electrical circuits, development of robot control systems, organization of production activities',
     years: '2013 - 2018',
   },
 ];
@@ -66,7 +93,8 @@ export const WORK_ITEMS = [
   {
     title: 'Frontend developer',
     subtitle: 'Clarity Project',
-    description: 'Worked on multiple projects using React, Redux, and\n' +
+    description:
+      'Worked on multiple projects using React, Redux, and\n' +
       'Redux Saga to build scalable and responsive web\n' +
       'applications. ' +
       'Collaborated with cross-functional teams to implement\n' +
@@ -92,23 +120,26 @@ export const PROGRESS_ITEMS = [
   { title: 'Jest', value: 70 },
   { title: 'Git', value: 85 },
   { title: 'Webpack', value: 50 },
+  { title: 'English', value: 60 },
+  { title: 'Polish', value: 80 },
 ];
 
 export const PROJECTS = [
   {
     title: 'Pokedex',
     image: { backgroundImage: 'url("../../images/Pokedex.png")' },
-    description: 'react, redux-toolkit, typeScript, SASS, RestAPI, Jest, webpack',
+    description:
+      'react, redux-toolkit, typeScript, SASS, RestAPI, Jest, webpack',
     gitHub: 'https://github.com/Dergacz/Pokemon_react',
     demo: 'https://master--thriving-khapse-aac99a.netlify.app/',
   },
-  // {
-  //   title: 'TodoList',
-  //   image: { backgroundImage: 'url("../../images/Pokedex.png")' },
-  //   description: 'react, redux, typeScript, storybook, MaterialUi, RestAPI',
-  //   gitHub: 'https://github.com/Dergacz/todolist2.0',
-  //   demo: 'https://master--thriving-khapse-aac99a.netlify.app/',
-  // },
+  {
+    title: 'TodoList',
+    image: { backgroundImage: 'url("../../images/Pokedex.png")' },
+    description: 'react, redux, typeScript, storybook, MaterialUi, RestAPI',
+    gitHub: 'https://github.com/Dergacz/todolist2.0',
+    demo: 'https://master--thriving-khapse-aac99a.netlify.app/',
+  },
 ];
 
 export const SOCIAL_MEDIA = [
