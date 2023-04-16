@@ -140,6 +140,13 @@ export const PROJECTS = [
     gitHub: 'https://github.com/Dergacz/wordpress-layout',
     demo: 'https://incredible-dragon-c27084.netlify.app',
   },
+  {
+    title: 'Todolist',
+    image: { backgroundImage: 'url("../../images/todolist.png")' },
+    description: 'React, Redux, Material UI, Storybook',
+    gitHub: 'https://github.com/Dergacz/todolist2.0',
+    demo: 'https://dergacz.github.io/todolist2.0/',
+  },
 ];
 
 export const SOCIAL_MEDIA = [
