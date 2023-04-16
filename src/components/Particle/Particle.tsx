@@ -12,7 +12,6 @@ export const Particle = () => {
     background: {
       color: '#282c34',
     },
-    height: '100vh',
     interactivity: {
       events: {
         onHover: {
@@ -52,7 +51,7 @@ export const Particle = () => {
         direction: 'none',
         enable: true,
         outMode: 'bounce',
-        random: true,
+        random: false,
         speed: 4,
         straight: true,
       },
