@@ -14,6 +14,9 @@ import {
 } from 'react-icons/all';
 import React from 'react';
 
+export const LANGUAGES = ['en', 'pl'];
+export const EN_LANGUAGE = 'en';
+export const PL_LANGUAGE = 'pl';
 export const NAVBAR_ITEMS = [
   { title: 'Home', link: 'home' },
   { title: 'About', link: 'about' },
