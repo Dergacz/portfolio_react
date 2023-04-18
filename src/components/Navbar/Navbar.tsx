@@ -4,12 +4,18 @@ import { Link } from 'react-scroll';
 import { INavbar } from './Navbar.types';
 import { RxHamburgerMenu, VscChromeClose } from 'react-icons/all';
 import { IconContext } from 'react-icons';
+import { Languages } from '../Languages/Languages';
 
 export const Navbar: FC<INavbar> = ({ scroll }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+
   return (
-    <>
-      <ul className={`navbar ${scroll >= 200 ? 'navbar-fixed' : ''} ${isOpen ? 'navbar-show' : ''}`}>
+    <div className={'navbar '}>
+      <ul
+        className={`navbar-items ${scroll >= 200 ? 'navbar-fixed' : ''} ${
+          isOpen ? 'navbar-show' : ''
+        }`}
+      >
         {constants.NAVBAR_ITEMS.map((item) => {
           return (
             <li className="navbar-item" key={item.title}>
@@ -31,14 +37,12 @@ export const Navbar: FC<INavbar> = ({ scroll }) => {
           );
         })}
       </ul>
+      <Languages isSelectOpen={isOpen} />
       <IconContext.Provider value={{ color: '#20c997', size: '25px' }}>
         <div className="navbar-button" onClick={() => setIsOpen(!isOpen)}>
-          {
-            isOpen ? <VscChromeClose /> : <RxHamburgerMenu />
-          }
+          {isOpen ? <VscChromeClose /> : <RxHamburgerMenu />}
         </div>
       </IconContext.Provider>
-    </>
-
+    </div>
   );
 };
