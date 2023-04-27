@@ -42,7 +42,7 @@ export const About = () => {
                   <li className="about-info-item">
                     <span className="about-info-item-title">Age:</span>
                     &#32;
-                    <span>26</span>
+                    <span>27</span>
                   </li>
                   <li className="about-info-item">
                     <span className="about-info-item-title">From:</span>
