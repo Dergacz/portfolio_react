@@ -16,7 +16,7 @@
     width: 60%;
 
     @include mobile {
-      width: 100%;
+      width: 115%;
     }
   }
 
@@ -24,6 +24,7 @@
     width: 40%;
     display: flex;
     justify-content: flex-end;
+    cursor: pointer;
 
     @include mobile {
       width: 60%;
@@ -59,17 +60,21 @@
 
   &-title {
     font-weight: 500;
-    font-size: calc(1.525rem + 1.3vw);
+    font-size: calc(1.525rem + .65vw);
     margin-bottom: 1rem;
     white-space: nowrap;
     overflow: hidden;
 
+    @include laptop {
+      font-size: calc(1.1rem + .65vw);
+    }
+
     @include tablet {
-      font-size: calc(1.325rem + 0.3vw);
+      font-size: calc(1.1rem + .3vw);
     }
 
     @include mobile {
-      font-size: calc(1.325rem + 0.3vw);
+      font-size: calc(1rem + .3vw);
     }
   }
 
@@ -77,6 +82,10 @@
     font-weight: 400;
     font-size: 1.3125rem;
     margin-bottom: 1.5rem;
+
+    @include mobile {
+      font-size: 1rem;
+    }
   }
 
   &-arrow {

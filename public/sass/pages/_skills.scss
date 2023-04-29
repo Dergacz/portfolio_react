@@ -1,6 +1,10 @@
 .skills {
   min-height: 100vh;
 
+  @include tablet {
+    min-height: 60vh;
+  }
+
   &-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
