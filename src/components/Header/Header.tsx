@@ -1,12 +1,14 @@
 import React, { FC } from 'react';
 import { IHeader } from './Header.style';
+import { useTranslation } from 'react-i18next';
 
 export const Header: FC<IHeader> = ({ subtitle, title }) => {
+  const { t } = useTranslation();
   return (
     <div className="header">
-      <h2 className="header-title">{title}</h2>
+      <h2 className="header-title">{t(title)}</h2>
       <h3 className="header-subtitle">
-        {subtitle} <span className="header-line" />
+        {t(subtitle)} <span className="header-line" />
       </h3>
     </div>
   );

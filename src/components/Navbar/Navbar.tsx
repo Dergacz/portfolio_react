@@ -5,8 +5,10 @@ import { INavbar } from './Navbar.types';
 import { RxHamburgerMenu, VscChromeClose } from 'react-icons/all';
 import { IconContext } from 'react-icons';
 import { Languages } from '../Languages/Languages';
+import { useTranslation } from 'react-i18next';
 
 export const Navbar: FC<INavbar> = ({ scroll }) => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
@@ -22,16 +24,16 @@ export const Navbar: FC<INavbar> = ({ scroll }) => {
               <Link
                 onClick={() => setIsOpen(false)}
                 className="navbar-link"
-                isDynamic={true}
+                isDynamic
                 href={`#${item.link}`}
-                spy={true}
+                spy
                 to={item.link}
-                smooth={true}
+                smooth
                 delay={100}
                 duration={1000}
                 offset={-80}
               >
-                {item.title}
+                {t(`navbar.${item.title}`)}
               </Link>
             </li>
           );

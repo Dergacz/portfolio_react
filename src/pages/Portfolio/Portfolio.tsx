@@ -10,7 +10,7 @@ export const Portfolio = () => {
       <div className="container">
         <Zoom cascade triggerOnce>
           <div className="portfolio" id="portfolio">
-            <Header title="portfolio" subtitle="my work" />
+            <Header title="portfolio.header.title" subtitle="portfolio.header.subtitle" />
             <div className="portfolio-projects">
               {constants.PROJECTS.map((project) => {
                 return (
