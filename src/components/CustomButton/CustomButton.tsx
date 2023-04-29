@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { ICustomButton } from './CustomButton.style';
+import { ICustomButton } from './CustomButton.types';
 import { ImDownload3 } from 'react-icons/all';
 
 export const CustomButton: FC<ICustomButton> = ({

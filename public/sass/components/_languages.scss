@@ -1,0 +1,39 @@
+.languages {
+  position: fixed;
+  z-index: 15;
+  display: flex;
+  right: 20px;
+
+  @include mobile {
+    position: absolute;
+    right: 0;
+    left: 10px;
+    z-index: 9;
+  }
+  &-item {
+
+  }
+
+  &-link {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 0 0.85em;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+      color: $main-green;
+    }
+
+    @include mobile {
+      height: 52px;
+    }
+
+    &-active {
+      color: $main-green;
+    }
+  }
+}

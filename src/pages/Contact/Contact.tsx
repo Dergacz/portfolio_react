@@ -6,12 +6,17 @@ import * as constants from '../../constants/constants';
 import emailjs from '@emailjs/browser';
 import { CustomSnackbar } from '../../components/CustomSnackbar/CustomSnackbar';
 import { Zoom } from 'react-awesome-reveal';
+import { useTranslation } from 'react-i18next';
 
 export const Contact = () => {
+  const { t } = useTranslation();
   const [isOpenSnackbar, setIsOpenSnackbar] = useState<boolean>(false);
   const [isSuccess, setIsSuccess] = useState<boolean>(false);
 
-  const handleClose = (event?: React.SyntheticEvent | Event, reason?: string) => {
+  const handleClose = (
+    event?: React.SyntheticEvent | Event,
+    reason?: string
+  ) => {
     if (reason === 'clickaway') {
       return;
     }
@@ -50,23 +55,28 @@ export const Contact = () => {
       <div className="container">
         <Zoom cascade triggerOnce>
           <div className="contact" id="contact">
-            <Header title="contact" subtitle="get in touch" />
+            <Header
+              title="contact.header.title"
+              subtitle="contact.header.subtitle"
+            />
             <div className="contact-wrapper">
               <div className="contact-info">
-                <h5>LET'S GET IN TOUCH</h5>
-                <IconContext.Provider value={{ color: '#20c997', size: '20px' }}>
+                <h5>{t('contact.title')}</h5>
+                <IconContext.Provider
+                  value={{ color: '#20c997', size: '20px' }}
+                >
                   {constants.CONTACT_INFO_ITEMS.map((item) => {
                     return (
                       <p className="contact-info-date" key={item.title}>
                         <span className="contact-info-icon">{item.icon}</span>
-                        {item.title}
+                        {t(`contact.item.${item.title}`)}
                       </p>
                     );
                   })}
                 </IconContext.Provider>
               </div>
               <div className="contact-form">
-                <h5>send me a note</h5>
+                <h5>{t('contact.form.title')}</h5>
                 <div className="contact-form-wrapper">
                   <form onSubmit={(e) => sendEmail(e)}>
                     <div className="contact-form-inputs">
@@ -74,29 +84,29 @@ export const Contact = () => {
                         className="contact-form-input"
                         type="text"
                         name="user_name"
-                        placeholder="Name"
+                        placeholder={t('contact.form.item.name') || 'Name'}
                         required
                       />
                       <input
                         className="contact-form-input"
                         type="email"
                         name="user_email"
-                        placeholder="Email"
+                        placeholder={t('contact.form.item.email') || 'Email'}
                         required
                       />
                     </div>
                     <textarea
                       className="contact-form-textarea"
                       rows={5}
-                      placeholder="Your message..."
+                      placeholder={`${t('contact.form.item.message' || 'Your message')}...`}
                       name="message"
                       required
                     />
                     <div className="contact-form-button">
                       <CustomButton
                         type="submit"
-                        title="Send Message"
-                        isFilled={true}
+                        title={t('contact.send_btn')}
+                        isFilled
                         isGray={false}
                       />
                     </div>

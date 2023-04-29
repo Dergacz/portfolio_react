@@ -10,11 +10,11 @@
 }
 
 .wrapper {
-  background-color: $secondary-background;
+  background-color: $main-background;
   padding: 4.5rem 0;
 
   &:nth-child(2n) {
-    background-color: $main-background;
+    background-color: $secondary-background;
   }
 }
 

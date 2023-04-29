@@ -1,6 +1,10 @@
 .about {
   min-height: 100vh;
 
+  @include tablet {
+    min-height: 60vh;
+  }
+
   &-description {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -32,6 +36,10 @@
   }
 
   &-info {
+
+    &-list {
+      margin-bottom: 15px;
+    }
 
     &-item {
       padding: 12px 0;

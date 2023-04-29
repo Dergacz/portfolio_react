@@ -1,15 +1,23 @@
-import React, { FC } from 'react';
+import React, { FC, useState } from 'react';
 import ReactTypingEffect from 'react-typing-effect';
 import { Link } from 'react-scroll';
 import { CustomButton } from '../../components/CustomButton/CustomButton';
 import { IoIosArrowDown } from 'react-icons/all';
 import { IHome } from '../Home/Home.types';
 import { Particle } from '../../components/Particle/Particle';
-import photo from '../../../public/images/photo.jpg';
+import photo_1 from '../../../public/images/photo_1.jpg';
 import { Tilt } from 'react-tilt';
 import { Navbar } from '../../components/Navbar/Navbar';
+import { useTranslation } from 'react-i18next';
 
 export const SecondHome: FC<IHome> = ({ scroll }) => {
+  const {t} = useTranslation();
+  const [image, setImage] = useState<boolean>(true);
+
+  const changePhotoHandler = () => {
+    setImage(!image);
+  };
+
   return (
     <>
       <Navbar scroll={scroll} />
@@ -17,14 +25,14 @@ export const SecondHome: FC<IHome> = ({ scroll }) => {
         <div className="second-home" id="home">
           <Particle />
           <div className="second-home-description">
-            <p className="second-home-hello">Welcome</p>
+            <p className="second-home-hello">{t('home.hello')}</p>
             <h1 className="second-home-title">
-              I'm&#32;
+              {t('home.title.iam') === 'I\'m' && t('home.title.iam')}&#32;
               <ReactTypingEffect
                 text={[
-                  'Stanislau Dziarhach.',
-                  'a Frontend Developer.',
-                  'a Software Engineer.',
+                  t('home.title.name'),
+                  t('home.title.profession.first'),
+                  t('home.title.profession.second'),
                 ]}
                 speed={70}
                 eraseSpeed={70}
@@ -32,24 +40,24 @@ export const SecondHome: FC<IHome> = ({ scroll }) => {
                 eraseDelay={300}
               />
             </h1>
-            <h2 className="second-home-subtitle">based in Poland, Gdansk</h2>
+            <h2 className="second-home-subtitle">{t('home.based')}</h2>
             <Link
               to="contact"
-              isDynamic={true}
+              isDynamic
               href="#"
-              spy={true}
-              smooth={true}
+              spy
+              smooth
               delay={100}
               duration={1500}
               offset={-80}
             >
-              <CustomButton title="Hire me" isFilled={false} isGray={false} />
+              <CustomButton title={t('home.button')} isFilled={false} isGray={false} />
             </Link>
           </div>
-          <div className="second-home-photo">
+          <div className="second-home-photo" onClick={changePhotoHandler}>
             <Tilt option={{ max: '25' }} style={{ position: 'relative' }}>
               <span className="second-home-photo-border" />
-              <img src={photo} alt="my_photo" />
+              <img src={`../../../public/images/photo_${t('home.photo')}.jpg` || photo_1} alt="my_photo" />
             </Tilt>
           </div>
           <Link
