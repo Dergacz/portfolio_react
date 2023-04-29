@@ -24,6 +24,7 @@ export const Navbar: FC<INavbar> = ({ scroll }) => {
               <Link
                 onClick={() => setIsOpen(false)}
                 className="navbar-link"
+                activeClass="navbar-active"
                 isDynamic
                 href={`#${item.link}`}
                 spy
