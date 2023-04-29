@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react';
+import React, { FC } from 'react';
 import ReactTypingEffect from 'react-typing-effect';
 import { Link } from 'react-scroll';
 import { CustomButton } from '../../components/CustomButton/CustomButton';
@@ -6,17 +6,13 @@ import { IoIosArrowDown } from 'react-icons/all';
 import { IHome } from '../Home/Home.types';
 import { Particle } from '../../components/Particle/Particle';
 import photo_1 from '../../../public/images/photo_1.jpg';
+import photo_2 from '../../../public/images/photo_2.jpg';
 import { Tilt } from 'react-tilt';
 import { Navbar } from '../../components/Navbar/Navbar';
 import { useTranslation } from 'react-i18next';
 
 export const SecondHome: FC<IHome> = ({ scroll }) => {
   const {t} = useTranslation();
-  const [image, setImage] = useState<boolean>(true);
-
-  const changePhotoHandler = () => {
-    setImage(!image);
-  };
 
   return (
     <>
@@ -54,10 +50,10 @@ export const SecondHome: FC<IHome> = ({ scroll }) => {
               <CustomButton title={t('home.button')} isFilled={false} isGray={false} />
             </Link>
           </div>
-          <div className="second-home-photo" onClick={changePhotoHandler}>
+          <div className="second-home-photo">
             <Tilt option={{ max: '25' }} style={{ position: 'relative' }}>
               <span className="second-home-photo-border" />
-              <img src={`../../../public/images/photo_${t('home.photo')}.jpg` || photo_1} alt="my_photo" />
+              <img src={`${t('home.photo') === '1' ? photo_1 : photo_2}` || photo_1} alt="my_photo" />
             </Tilt>
           </div>
           <Link
