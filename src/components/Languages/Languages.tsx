@@ -23,7 +23,7 @@ export const Languages: FC<ILanguages> = ({ isSelectOpen }) => {
         <ul className="languages">
           {constants.LANGUAGES.map((language) => {
             return (
-              <li className="languages-item">
+              <li className="languages-item" key={language}>
                 <span
                   className={`languages-link ${
                     selectLanguage === language ? 'languages-link-active' : ''

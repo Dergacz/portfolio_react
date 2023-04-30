@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import { CustomButton } from '../CustomButton/CustomButton';
 
 export interface IProject {
   title: string;
@@ -23,18 +24,15 @@ export const Project: FC<IProject> = ({
             <p className="project-title">{title}</p>
             <p className="project-description">{description}</p>
           </div>
-
           <div className="project-links">
             <div>
-              <span className="project-links-title">gitHub: </span>
               <a className="project-links-link" href={gitHubLink} target="_blank" rel="noreferrer">
-                {gitHubLink}
+                <CustomButton title="GitHub" isFilled={false} isGray={false} />
               </a>
             </div>
             <div>
-              <span className="project-links-title">demo: </span>
               <a className="project-links-link" href={previewLink} target="_blank" rel="noreferrer">
-                {previewLink}
+                <CustomButton title="Demo" isFilled={false} isGray={false} />
               </a>
             </div>
           </div>
