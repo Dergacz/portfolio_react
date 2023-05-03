@@ -97,6 +97,14 @@ export const PROJECTS = [
     gitHub: 'https://github.com/Dergacz/Pokemon_react',
     demo: 'https://master--thriving-khapse-aac99a.netlify.app/',
   },
+  {
+    title: 'Calendar',
+    image: { backgroundImage: 'url("../../images/calendar.png")' },
+    description:
+      'react, redux-toolkit, typeScript, ant design',
+    gitHub: 'https://github.com/Dergacz/Calendar',
+    demo: 'https://dergacz.github.io/Calendar/',
+  },
 ];
 
 export const SOCIAL_MEDIA = [
