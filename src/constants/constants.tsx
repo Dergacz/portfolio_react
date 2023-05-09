@@ -105,6 +105,14 @@ export const PROJECTS = [
     gitHub: 'https://github.com/Dergacz/Calendar',
     demo: 'https://dergacz.github.io/Calendar/',
   },
+  {
+    title: 'TailwindCSS course',
+    image: { backgroundImage: 'url("../../images/tailwind_course.png")' },
+    description:
+      'HTML, CSS, TailwindCSS',
+    gitHub: 'https://github.com/Dergacz/tailwindcss-course',
+    demo: 'https://dergacz.github.io/tailwindcss-course/',
+  },
 ];
 
 export const SOCIAL_MEDIA = [
