@@ -28,7 +28,7 @@ export const polishLanguage = {
     },
     'iam': 'Mam na imię',
     'title': 'jestem Frontend Developerem',
-    'description_1': 'Jestem doświadczonym Frontend developerem z 3 letnim doświadczeniem zawodowym. Posiadam umiejętności w zakresie HTML, CSS, JavaScript i frameworków takich jak React, a także biegłość w używaniu Git. Znam biegle kilka języków i codziennie się doskonalę.',
+    'description_1': 'Jestem doświadczonym Frontend developerem z 3 letnim doświadczeniem zawodowym. Posiadam umiejętności w zakresie HTML, CSS, JavaScript, TypeScript i frameworków takich jak React, a także biegłość w używaniu Git. Znam biegle kilka języków i codziennie się doskonalę.',
     'description_2': 'Moim celem jest pomóc Państwu wprowadzić w życie wszystkie pomysły. Wierzę, że moje umiejętności i doświadczenie zawodowe mogą wnieść cenny wkład w realizację Państwa celów biznesowych. W swoich projektach wykorzystuję nowe narzędzia informatyczne, a jeśli pojawiają się trudności, pokonuję je z łatwością. Zawsze zorientowany na wyniki - to moje motto.',
     'info': {
       'name': 'Imie',

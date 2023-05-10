@@ -28,7 +28,7 @@ export const englishLanguage = {
     },
     'iam': 'I\'m',
     'title': 'a Frontend Developer',
-    'description_1': 'I am an experienced Frontend developer with 3 years of work experience. I have skills in HTML, CSS, JavaScript, and frameworks such as React, as well as proficiency in using Git. I am fluent in several languages, and I self improve every day.',
+    'description_1': 'I am an experienced Frontend developer with 3 years of work experience. I have skills in HTML, CSS, JavaScript, TypeScript and frameworks such as React, as well as proficiency in using Git. I am fluent in several languages, and I self improve every day.',
     'description_2': 'I aim to help you bring all your ideas to life. I believe my professional skills and experience can make a valuable contribution to achieving business goals.\n' +
       '                  I use new IT tools in my projects and if any difficulty arises, I overcome it easily. Always focused on results - that\'s my motto.',
     'info': {
