@@ -8,7 +8,7 @@ export const polishLanguage = {
     'contact': 'Kontakt',
   },
   'home': {
-    'hello': 'Witam',
+    'hello': 'Cześć',
     'title': {
       'iam': 'Jestem',
       'name': 'Mam na imię Stanislau Dziarhach.',
