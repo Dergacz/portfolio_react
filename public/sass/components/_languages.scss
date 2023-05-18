@@ -1,17 +1,18 @@
 .languages {
-  position: fixed;
+  position: absolute;
   z-index: 15;
   display: flex;
-  right: 20px;
+  left: 20px;
+
+  &-fixed {
+    position: fixed;
+  }
 
   @include mobile {
     position: absolute;
     right: 0;
     left: 10px;
     z-index: 9;
-  }
-  &-item {
-
   }
 
   &-link {
