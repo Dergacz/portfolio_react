@@ -3,6 +3,7 @@ $mobile-width: 480px;
 $tablet-width: 768px;
 $laptop-width: 1024px;
 $desktop-width: 1280px;
+$pc-width: 1400px;
 
 @mixin mobile {
     @media (min-width: #{$smartphone-width}) and (max-width: #{$tablet-width}) {
@@ -41,7 +42,13 @@ $desktop-width: 1280px;
 }
 
 @mixin desktop {
-    @media (min-width: #{$desktop-width + 1px}) {
+    @media (min-width: #{$desktop-width + 1px}) and (max-width: #{$pc-width}) {
+        @content;
+    }
+}
+
+@mixin pc {
+    @media (min-width: #{$pc-width + 1px}) {
         @content;
     }
 }
