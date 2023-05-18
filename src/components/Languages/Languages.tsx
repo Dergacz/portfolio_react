@@ -3,7 +3,7 @@ import i18n from 'i18next';
 import * as constants from '../../constants/constants';
 import { ILanguages } from './Languages.types';
 
-export const Languages: FC<ILanguages> = ({ isSelectOpen }) => {
+export const Languages: FC<ILanguages> = ({ isSelectOpen, scroll }) => {
   const [selectLanguage, setsSelectLanguage] = useState<string>(
     constants.EN_LANGUAGE
   );
@@ -20,7 +20,7 @@ export const Languages: FC<ILanguages> = ({ isSelectOpen }) => {
   return (
     <>
       {!isSelectOpen && (
-        <ul className="languages">
+        <ul className={`languages ${scroll >= 200 ? 'languages-fixed' : ''}`}>
           {constants.LANGUAGES.map((language) => {
             return (
               <li className="languages-item" key={language}>
