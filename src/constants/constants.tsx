@@ -113,6 +113,22 @@ export const PROJECTS = [
   //   gitHub: 'https://github.com/Dergacz/tailwindcss-course',
   //   demo: 'https://dergacz.github.io/tailwindcss-course/',
   // },
+  // {
+  //   title: 'Windows_shop',
+  //   image: { backgroundImage: 'url("../../images/Windows_shop.png")' },
+  //   description:
+  //     'JavaScript, HTML, CSS, jQuery',
+  //   gitHub: 'https://github.com/Dergacz/js_window',
+  //   demo: 'https://master--chic-narwhal-1ca9e4.netlify.app/',
+  // },
+  // {
+  //   title: 'Wordpress',
+  //   image: { backgroundImage: 'url("../../images/wordpress.png")' },
+  //   description:
+  //     'HTML, CSS',
+  //   gitHub: 'https://github.com/Dergacz/wordpress-layout',
+  //   demo: 'https://incredible-dragon-c27084.netlify.app',
+  // },
 ];
 
 export const SOCIAL_MEDIA = [
