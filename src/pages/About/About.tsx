@@ -45,11 +45,11 @@ export const About = () => {
                       stanislav.dziarhach@gmail.com
                     </a>
                   </li>
-                  <li className="about-info-item">
-                    <span className="about-info-item-title">{t('about.info.age')}:</span>
-                    &#32;
-                    <span>27</span>
-                  </li>
+                  {/*<li className="about-info-item">*/}
+                  {/*  <span className="about-info-item-title">{t('about.info.age')}:</span>*/}
+                  {/*  &#32;*/}
+                  {/*  <span>27</span>*/}
+                  {/*</li>*/}
                   <li className="about-info-item">
                     <span className="about-info-item-title">{t('about.info.from')}:</span>
                     &#32;
