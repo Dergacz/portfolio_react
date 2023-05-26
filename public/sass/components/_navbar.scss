@@ -88,10 +88,7 @@
     position: fixed;
     background-color: $navbar-background;
     z-index: 5;
-
-    @include desktop {
-      transition: .6s;
-      transform: translate(0, 0);
-    }
+    transition: .6s;
+    transform: translate(0, 0);
   }
 }
