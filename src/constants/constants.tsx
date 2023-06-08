@@ -67,7 +67,7 @@ export const EDUCATION_ITEMS = [
 export const WORK_ITEMS = [
   {
     key: 'itechart',
-    years: '2022 - present',
+    years: '2022 - 2023',
   },
   {
     key: 'clarity_project',
