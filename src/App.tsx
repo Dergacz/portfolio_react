@@ -28,17 +28,17 @@ function App() {
       <About />
       <Skills />
       <Resume />
-      <Portfolio />
+      {/*<Portfolio />*/}
       <Contact />
       <Footer />
       {scroll >= 200 && (
         <Link
           to="home"
           className="arrow-wrapper"
-          isDynamic={true}
+          isDynamic
           href="#"
-          spy={true}
-          smooth={true}
+          spy
+          smooth
           delay={100}
           duration={1000}
         >

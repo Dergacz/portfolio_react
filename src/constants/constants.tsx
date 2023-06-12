@@ -22,7 +22,7 @@ export const NAVBAR_ITEMS = [
   { title: 'about', link: 'about' },
   { title: 'whatIdo', link: 'whatIdo' },
   { title: 'resume', link: 'resume' },
-  { title: 'portfolio', link: 'portfolio' },
+  // { title: 'portfolio', link: 'portfolio' },
   { title: 'contact', link: 'contact' },
 ];
 
