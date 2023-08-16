@@ -7,8 +7,8 @@ import { IconContext } from 'react-icons';
 import { Languages } from '../Languages/Languages';
 import { useTranslation } from 'react-i18next';
 import { SocialMedia } from '../SocialMedia/SocialMedia';
-import {VscChromeClose} from 'react-icons/vsc';
-import {RxHamburgerMenu} from 'react-icons/rx';
+import { VscChromeClose } from 'react-icons/vsc';
+import { RxHamburgerMenu } from 'react-icons/rx';
 
 export const Navbar: FC<INavbar> = ({ scroll }) => {
   const { t } = useTranslation();

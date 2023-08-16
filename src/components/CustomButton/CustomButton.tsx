@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { ICustomButton } from './CustomButton.types';
-import {ImDownload3} from "react-icons/im";
+import { ImDownload3 } from 'react-icons/im';
 
 export const CustomButton: FC<ICustomButton> = ({
   title,
