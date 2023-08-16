@@ -1,18 +1,7 @@
-import {
-  AiFillGithub,
-  AiFillLinkedin,
-  AiFillMail,
-  AiFillPhone,
-  AiOutlineTeam,
-  FaHouseUser,
-  SiCodewars,
-  SiJest,
-  SiReact,
-  SiRedux,
-  SiSass,
-  SiTypescript,
-} from 'react-icons/all';
 import React from 'react';
+import { SiCodewars, SiJest, SiReact, SiRedux, SiSass, SiTypescript } from 'react-icons/si';
+import { AiFillGithub, AiFillLinkedin, AiFillMail, AiFillPhone, AiOutlineTeam } from 'react-icons/ai';
+import { FaHouseUser } from 'react-icons/fa';
 
 export const LANGUAGES = ['en', 'pl'];
 export const EN_LANGUAGE = 'en';
@@ -54,10 +43,10 @@ export const SKILLS_ITEMS = [
 ];
 
 export const EDUCATION_ITEMS = [
-  {
-    key: 'incubator',
-    years: '2020 - 2020',
-  },
+  // {
+  //   key: 'incubator',
+  //   years: '2020 - 2020',
+  // },
   {
     key: 'bru',
     years: '2013 - 2018',
