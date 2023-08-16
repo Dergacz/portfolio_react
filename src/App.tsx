@@ -6,9 +6,9 @@ import { Portfolio } from './pages/Portfolio/Portfolio';
 import { Contact } from './pages/Contact/Contact';
 import { Footer } from './pages/Footer/Footer';
 import React, { useEffect, useState } from 'react';
-import { IoIosArrowUp } from 'react-icons/all';
 import { Link } from 'react-scroll';
 import { SecondHome } from './pages/SecondHome/SecondHome';
+import {IoIosArrowUp} from "react-icons/io";
 
 function App() {
   const [scroll, setScroll] = useState<number>(0);

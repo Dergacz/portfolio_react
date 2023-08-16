@@ -2,7 +2,6 @@ import React, { FC } from 'react';
 import ReactTypingEffect from 'react-typing-effect';
 import { Link } from 'react-scroll';
 import { CustomButton } from '../../components/CustomButton/CustomButton';
-import { IoIosArrowDown } from 'react-icons/all';
 import { IHome } from '../Home/Home.types';
 import { Particle } from '../../components/Particle/Particle';
 import photo_1 from '../../../public/images/photo_1.jpg';
@@ -10,6 +9,7 @@ import photo_2 from '../../../public/images/photo_2.jpg';
 import { Tilt } from 'react-tilt';
 import { Navbar } from '../../components/Navbar/Navbar';
 import { useTranslation } from 'react-i18next';
+import {IoIosArrowDown} from "react-icons/io";
 
 export const SecondHome: FC<IHome> = ({ scroll }) => {
   const {t} = useTranslation();
