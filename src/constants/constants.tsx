@@ -54,10 +54,10 @@ export const SKILLS_ITEMS = [
 ];
 
 export const EDUCATION_ITEMS = [
-  {
-    key: 'incubator',
-    years: '2020 - 2020',
-  },
+  // {
+  //   key: 'incubator',
+  //   years: '2020 - 2020',
+  // },
   {
     key: 'bru',
     years: '2013 - 2018',
@@ -65,6 +65,10 @@ export const EDUCATION_ITEMS = [
 ];
 
 export const WORK_ITEMS = [
+  {
+    key: 'LSEG',
+    years: '2023 - present',
+  },
   {
     key: 'itechart',
     years: '2022 - 2023',
