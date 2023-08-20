@@ -119,6 +119,11 @@ export const englishLanguage = {
           'Material UI and Figma. ' +
           'Created stories and developed components using\n' +
           'Storybook to enhance usability and collaboration.'
+      },
+      'LSEG': {
+        'title': 'Frontend developer',
+        'subtitle': 'LSEG (London Stock Exchange Group)',
+        'description': '',
       }
     },
     'skills': {

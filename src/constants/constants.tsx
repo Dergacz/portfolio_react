@@ -55,6 +55,10 @@ export const EDUCATION_ITEMS = [
 
 export const WORK_ITEMS = [
   {
+    key: 'LSEG',
+    years: '2023 - present',
+  },
+  {
     key: 'itechart',
     years: '2022 - 2023',
   },

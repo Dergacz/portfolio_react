@@ -99,6 +99,11 @@ export const polishLanguage = {
         'title': 'Programista Frontend',
         'subtitle': 'Clarity Project',
         'description': 'Pracowałem nad kilkoma projektami wykorzystującymi React, Redux i Redux Saga do tworzenia skalowalnych i responsywnych aplikacji internetowych. Pracowałem z zespołami cross-funkcjonalnymi, aby wdrożyć nowe funkcje i zoptymalizować istniejącą bazę kodu. Opracowałem i utrzymywałem testy jednostkowe, aby zapewnić jakość kodu i zapobiec regresjom. Używałem Git i Bitbucket do kontroli wersji oraz Jira do zarządzania projektami. Zaprojektowałem i zaimplementowałem komponenty UI używając Material UI i Figma. Tworzyłem historie i rozwijałem komponenty przy użyciu Storybook, aby zwiększyć użyteczność i współpracę.'
+      },
+      'LSEG': {
+        'title': 'Programista Frontend',
+        'subtitle': 'LSEG (London Stock Exchange Group)',
+        'description': '',
       }
     },
     'skills': {
