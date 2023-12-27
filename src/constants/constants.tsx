@@ -76,8 +76,8 @@ export const PROGRESS_ITEMS = [
   { title: 'html_css', value: 95 },
   { title: 'jest', value: 70 },
   { title: 'git', value: 85 },
-  { title: 'webpack', value: 50 },
-  { title: 'english', value: 60 },
+  { title: 'webpack', value: 70 },
+  { title: 'english', value: 80 },
   { title: 'polish', value: 80 },
 ];
 

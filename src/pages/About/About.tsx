@@ -4,6 +4,7 @@ import { CustomButton } from '../../components/CustomButton/CustomButton';
 import { onDownloadCV } from '../../utils/downloadCV';
 import { Zoom } from 'react-awesome-reveal';
 import { useTranslation } from 'react-i18next';
+import { yearsCount } from "../../utils/yearsCount";
 
 export const About = () => {
   const { t } = useTranslation();
@@ -22,7 +23,7 @@ export const About = () => {
                   {t('about.iam')} <span className="about-name">Stanislau Dziarhach,</span> {t('about.title')}
                 </h4>
                 <p>
-                  {t('about.description_1')}
+                  {t('about.description_1', { years: yearsCount('2020-05-05') })}
                 </p>
                 <p>
                   {t('about.description_2')}
