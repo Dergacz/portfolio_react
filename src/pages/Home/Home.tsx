@@ -2,9 +2,9 @@ import React, { FC } from 'react';
 import { CustomButton } from '../../components/CustomButton/CustomButton';
 import { Navbar } from '../../components/Navbar/Navbar';
 import { Link } from 'react-scroll';
-import { IoIosArrowDown } from 'react-icons/all';
 import ReactTypingEffect from 'react-typing-effect';
 import { IHome } from './Home.types';
+import { IoIosArrowDown } from "react-icons/io";
 
 export const Home: FC<IHome> = ({ scroll }) => {
   return (

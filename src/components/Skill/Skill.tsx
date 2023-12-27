@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import { DiReact } from 'react-icons/all';
 
 export interface ISkill {
   title: string;
