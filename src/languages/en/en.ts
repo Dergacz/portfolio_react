@@ -95,35 +95,44 @@ export const englishLanguage = {
       'itechart': {
         'title': 'Software Engineer',
         'subtitle': 'iTechArt',
-        'description': 'Developed multiple web applications using React,\n' +
-          'Redux, and Redux Toolkit to build scalable and\n' +
-          'responsive user interfaces. ' +
-          'Utilized Webpack and Vite for bundling and optimization\n' +
-          'of the front-end code. ' +
-          'Created UI components using NextUI and optimized\n' +
-          'them for different devices. '
+        'description': 'Developed multiple web applications using React, Redux, and Redux Toolkit to build scalable and responsive user interfaces.\n' +
+          'Utilized Webpack and Vite for bundling and optimization of the front-end code to enhance performance and development efficiency.\n' +
+          'Integrated GraphQL and REST APIs using Axios library to communicate with server-side services.\n' +
+          'Created UI components using NextUI and optimized them for various devices.\n' +
+          'Improved performance and optimized server requests through integration of GraphQL and REST APIs with Axios.\n' +
+          'Implemented component testing using Jest and React Testing Library to ensure code quality.\n' +
+          'Optimized development processes through automation of build, testing, and deployment of applications.\n' +
+          'Participated in code reviews and knowledge sharing with colleagues to enhance code quality and consistency.\n' +
+          'Researched new technologies and approaches in frontend development for continuous professional growth.'
       },
       'clarity_project': {
         'title': 'Frontend developer',
         'subtitle': 'Clarity Project',
-        'description': 'Worked on multiple projects using React, Redux, and\n' +
-          'Redux Saga to build scalable and responsive web\n' +
-          'applications. ' +
-          'Collaborated with cross-functional teams to implement\n' +
-          'new features and optimize existing codebase. ' +
-          'Developed and maintained unit tests to ensure code\n' +
-          'quality and prevent regressions. ' +
-          'Utilized Git and Bitbucket for version control and Jira for\n' +
-          'project management. ' +
-          'Designed and implemented UI components using\n' +
-          'Material UI and Figma. ' +
-          'Created stories and developed components using\n' +
-          'Storybook to enhance usability and collaboration.'
+        'description': 'Developed new features and functionalities using React, TypeScript, and Redux Saga.\n' +
+          'Implemented optimization strategies to enhance the performance of the application.\n' +
+          'Customized and optimized existing functionalities to meet evolving requirements.\n' +
+          'Actively participated in bug fixing and provided ongoing support to ensure smooth operation.\n' +
+          'Conducted comprehensive unit tests to ensure the accuracy and reliability of the codebase.\n' +
+          'Enhanced design aesthetics and user experience to improve overall usability.\n' +
+          'Conducted thorough code reviews to maintain code quality and adhere to best practices.\n' +
+          'Established and maintained socket server connections to facilitate real-time communication.\n' +
+          'Worked with Twig templates to streamline frontend development and templating processes.\n' +
+          'Utilized design tools like Figma to collaborate on UI/UX design and ensure seamless integration of designs into development workflows.'
       },
       'LSEG': {
         'title': 'Frontend developer',
         'subtitle': 'LSEG (London Stock Exchange Group)',
-        'description': '',
+        'description': 'Developed a fintech applications using React, JavaScript, and TypeScript, LESS\n' +
+          'Developing and maintaining client applications using React, JavaScript, and TypeScript.\n' +
+          'Designing and implementing application architecture using Redux Observable and RxJS.\n' +
+          'Optimizing development processes using build tools such as Webpack.\n' +
+          'Participating in UI design using Figma.\n' +
+          'Implementing functionality to ensure high levels of security and performance in applications.\n' +
+          'Introducing and testing new technologies and approaches to improve code quality and development processes.\n' +
+          'Collaborating with other developers, designers, and product managers to achieve project goals.\n' +
+          'Conducting code reviews and ensuring compliance with coding standards and best practices.\n' +
+          'Developing and supporting cross-platform applications, ensuring their functionality on various devices and browsers.\n' +
+          'Developed and maintained unit tests and screenshot to ensure code quality and prevent regressions',
       }
     },
     'skills': {
