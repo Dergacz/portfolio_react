@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { IHeader } from './Header.style';
+import { IHeader } from './Header.types';
 import { useTranslation } from 'react-i18next';
 
 export const Header: FC<IHeader> = ({ subtitle, title }) => {

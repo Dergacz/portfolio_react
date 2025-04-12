@@ -3,4 +3,5 @@ export interface IResumeItem {
   title: string;
   subtitle: string;
   description: string;
+  link?: string;
 }

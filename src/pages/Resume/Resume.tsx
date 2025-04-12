@@ -7,6 +7,7 @@ import { CustomButton } from '../../components/CustomButton/CustomButton';
 import { onDownloadCV } from '../../utils/downloadCV';
 import { Zoom } from 'react-awesome-reveal';
 import { useTranslation } from 'react-i18next';
+import { Collapse } from '../../components/Collapse/Collapse';
 
 export const Resume = () => {
   const { t } = useTranslation();
@@ -15,10 +16,7 @@ export const Resume = () => {
       <div className="container">
         <Zoom cascade triggerOnce>
           <div className="resume" id="resume">
-            <Header
-              title="resume.header.title"
-              subtitle="resume.header.subtitle"
-            />
+            <Header title="resume.header.title" subtitle="resume.header.subtitle" />
             <div className="resume-items-wrapper">
               <div className="resume-items">
                 <h4 className="resume-items-title">{t('resume.education.title')}</h4>
@@ -33,6 +31,20 @@ export const Resume = () => {
                     />
                   );
                 })}
+                <Collapse title={t('resume.my_certificates')}>
+                  {constants.CERTIFICATES_ITEMS.map((item) => {
+                    return (
+                      <ResumeItem
+                        key={item.key}
+                        years={item.years}
+                        title={`resume.education.${item.key}.title`}
+                        subtitle={`resume.education.${item.key}.subtitle`}
+                        description={`resume.education.${item.key}.description`}
+                        link={item.link}
+                      />
+                    );
+                  })}
+                </Collapse>
               </div>
               <div className="resume-items">
                 <h4 className="resume-items-title">{t('resume.work.title')}</h4>
@@ -47,6 +59,19 @@ export const Resume = () => {
                     />
                   );
                 })}
+                <Collapse title={t('resume.my_additional_activities')}>
+                  {constants.ADDITIONAL_ACTIVITIES_ITEMS.map((item) => {
+                    return (
+                      <ResumeItem
+                        key={item.key}
+                        years={item.years}
+                        title={`resume.additional_activities.${item.key}.title`}
+                        subtitle={`resume.additional_activities.${item.key}.subtitle`}
+                        description={`resume.additional_activities.${item.key}.description`}
+                      />
+                    );
+                  })}
+                </Collapse>
               </div>
             </div>
             <h4 className="resume-items-title">{t('resume.skills.title')}</h4>
@@ -78,8 +103,8 @@ export const Resume = () => {
               <CustomButton
                 title={t('resume.download_btn')}
                 onClick={onDownloadCV}
-                isFilled={false}
                 isGray
+                isDownloadIcon
               />
             </div>
           </div>

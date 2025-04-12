@@ -9,13 +9,7 @@ export interface IProject {
   previewLink: string;
 }
 
-export const Project: FC<IProject> = ({
-  gitHubLink,
-  image,
-  previewLink,
-  title,
-  description,
-}) => {
+export const Project: FC<IProject> = ({ gitHubLink, image, previewLink, title, description }) => {
   return (
     <div className="project" style={image}>
       <div className="project-curtain">
@@ -27,12 +21,12 @@ export const Project: FC<IProject> = ({
           <div className="project-links">
             <div>
               <a className="project-links-link" href={gitHubLink} target="_blank" rel="noreferrer">
-                <CustomButton title="GitHub" isFilled={false} isGray={false} />
+                <CustomButton title="GitHub" />
               </a>
             </div>
             <div>
               <a className="project-links-link" href={previewLink} target="_blank" rel="noreferrer">
-                <CustomButton title="Demo" isFilled={false} isGray={false} />
+                <CustomButton title="Demo" />
               </a>
             </div>
           </div>

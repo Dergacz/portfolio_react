@@ -4,7 +4,7 @@ import { Navbar } from '../../components/Navbar/Navbar';
 import { Link } from 'react-scroll';
 import ReactTypingEffect from 'react-typing-effect';
 import { IHome } from './Home.types';
-import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowDown } from 'react-icons/io';
 
 export const Home: FC<IHome> = ({ scroll }) => {
   return (
@@ -15,11 +15,7 @@ export const Home: FC<IHome> = ({ scroll }) => {
       <h1 className="home-title">
         I'm&#32;
         <ReactTypingEffect
-          text={[
-            'Stanislau Dziarhach.',
-            'a Frontend Developer.',
-            'a Software Engineer.',
-          ]}
+          text={['Stanislau Dziarhach.', 'a Frontend Developer.', 'a Software Engineer.']}
           speed={70}
           eraseSpeed={70}
           typingDelay={300}

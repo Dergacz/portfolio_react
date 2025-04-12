@@ -12,7 +12,7 @@ import { useTranslation } from 'react-i18next';
 import { IoIosArrowDown } from 'react-icons/io';
 
 export const SecondHome: FC<IHome> = ({ scroll }) => {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <>
@@ -47,13 +47,16 @@ export const SecondHome: FC<IHome> = ({ scroll }) => {
               duration={1500}
               offset={-80}
             >
-              <CustomButton title={t('home.button')} isFilled={false} isGray={false} />
+              <CustomButton title={t('home.button')} />
             </Link>
           </div>
           <div className="second-home-photo">
             <Tilt option={{ max: '25' }} style={{ position: 'relative' }}>
               <span className="second-home-photo-border" />
-              <img src={`${t('home.photo') === '1' ? photo_1 : photo_2}` || photo_1} alt="my_photo" />
+              <img
+                src={`${t('home.photo') === '1' ? photo_1 : photo_2}` || photo_1}
+                alt="my_photo"
+              />
             </Tilt>
           </div>
           <Link

@@ -1,14 +1,15 @@
+import { useEffect, useState } from 'react';
+import { IoIosArrowUp } from 'react-icons/io';
+import { Link } from 'react-scroll';
 import '../public/sass/main.scss';
+import { CustomSnackbar } from './components/CustomSnackbar/CustomSnackbar';
+import { Provider } from './components/Provider/Provider';
 import { About } from './pages/About/About';
-import { Skills } from './pages/Skills/Skills';
-import { Resume } from './pages/Resume/Resume';
-import { Portfolio } from './pages/Portfolio/Portfolio';
 import { Contact } from './pages/Contact/Contact';
 import { Footer } from './pages/Footer/Footer';
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-scroll';
+import { Resume } from './pages/Resume/Resume';
 import { SecondHome } from './pages/SecondHome/SecondHome';
-import { IoIosArrowUp } from 'react-icons/io';
+import { Skills } from './pages/Skills/Skills';
 
 function App() {
   const [scroll, setScroll] = useState<number>(0);
@@ -23,29 +24,32 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <SecondHome scroll={scroll} />
-      <About />
-      <Skills />
-      <Resume />
-      {/*<Portfolio />*/}
-      <Contact />
-      <Footer />
-      {scroll >= 200 && (
-        <Link
-          to="home"
-          className="arrow-wrapper"
-          isDynamic
-          href="#"
-          spy
-          smooth
-          delay={100}
-          duration={1000}
-        >
-          <IoIosArrowUp size={20} />
-        </Link>
-      )}
-    </div>
+    <Provider>
+      <div className="App">
+        <SecondHome scroll={scroll} />
+        <About />
+        <Skills />
+        <Resume />
+        {/*<Portfolio />*/}
+        <Contact />
+        <Footer />
+        {scroll >= 200 && (
+          <Link
+            to="home"
+            className="arrow-wrapper"
+            isDynamic
+            href="#"
+            spy
+            smooth
+            delay={100}
+            duration={1000}
+          >
+            <IoIosArrowUp size={20} />
+          </Link>
+        )}
+        <CustomSnackbar />
+      </div>
+    </Provider>
   );
 }
 

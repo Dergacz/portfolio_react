@@ -74,12 +74,5 @@ export const Particle = () => {
     },
   };
 
-  return (
-    <Particles
-      className="particle"
-      id="tsparticles"
-      init={particlesInit}
-      options={options}
-    />
-  );
+  return <Particles className="particle" id="tsparticles" init={particlesInit} options={options} />;
 };

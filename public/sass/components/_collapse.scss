@@ -1,0 +1,49 @@
+$collapse-bg-color: #111418;
+$collapse-hover-bg-color: #1a1f24;
+$collapse-transition: 0.3s ease;
+$collapse-content-transition: 0.5s ease-in;
+
+.collapse {
+  &-container {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  &-button {
+    width: 100%;
+    padding: 1rem;
+    background-color: $collapse-bg-color;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color $collapse-transition;
+
+    &:hover {
+      background-color: $collapse-hover-bg-color;
+    }
+  }
+
+  &-icon {
+    transition: transform $collapse-transition;
+
+    &.open {
+      transform: rotate(180deg);
+    }
+  }
+
+  &-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height $collapse-transition;
+
+    &.open {
+      max-height: 5000px;
+      transition: max-height $collapse-content-transition;
+    }
+  }
+}

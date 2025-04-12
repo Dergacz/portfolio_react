@@ -1,6 +1,12 @@
 {
-  "extends": [
-    "react-app"
+  "extends": ["react-app"],
+  "overrides": [
+    {
+      "files": ["src/languages/**/*"],
+      "rules": {
+        "max-len": "off"
+      }
+    }
   ],
   "rules": {
     "no-console": "warn",
@@ -9,6 +15,6 @@
     "jsx-quotes": 1,
     "indent": ["warn", 2],
     "semi": ["warn", "always"],
-
+    "max-len": ["error", { "code": 100 }]
   }
 }

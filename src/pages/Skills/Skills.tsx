@@ -13,10 +13,7 @@ export const Skills = () => {
       <div className="container">
         <Zoom cascade triggerOnce>
           <div className="skills" id="whatIdo">
-            <Header
-              title="skills.header.title"
-              subtitle="skills.header.subtitle"
-            />
+            <Header title="skills.header.title" subtitle="skills.header.subtitle" />
             <IconContext.Provider value={{ size: '40px', color: '#20c997' }}>
               <div className="skills-wrapper">
                 {constants.SKILLS_ITEMS.map((skill) => {

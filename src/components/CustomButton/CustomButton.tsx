@@ -8,6 +8,7 @@ export const CustomButton: FC<ICustomButton> = ({
   type,
   isFilled = false,
   isGray = false,
+  isDownloadIcon,
 }) => {
   const checkStyle = (filled: boolean, gray: boolean) => {
     if (filled) {
@@ -19,13 +20,9 @@ export const CustomButton: FC<ICustomButton> = ({
   };
 
   return (
-    <button
-      className={`button${checkStyle(isFilled, isGray)}`}
-      onClick={onClick}
-      type={type}
-    >
+    <button className={`button${checkStyle(isFilled, isGray)}`} onClick={onClick} type={type}>
       {title}
-      {isGray && <ImDownload3 style={{ marginLeft: '10px' }} />}
+      {isDownloadIcon && <ImDownload3 style={{ marginLeft: '10px' }} />}
     </button>
   );
 };

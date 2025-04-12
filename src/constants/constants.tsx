@@ -1,6 +1,21 @@
 import React from 'react';
-import { SiCodewars, SiJest, SiReact, SiRedux, SiSass, SiTypescript } from 'react-icons/si';
-import { AiFillGithub, AiFillLinkedin, AiFillMail, AiFillPhone, AiOutlineTeam } from 'react-icons/ai';
+import {
+  SiCodewars,
+  SiJest,
+  SiReact,
+  SiRedux,
+  SiSass,
+  SiTypescript,
+  SiNodedotjs,
+  SiExpress,
+} from 'react-icons/si';
+import {
+  AiFillGithub,
+  AiFillLinkedin,
+  AiFillMail,
+  AiFillPhone,
+  AiOutlineTeam,
+} from 'react-icons/ai';
 import { FaHouseUser } from 'react-icons/fa';
 
 export const LANGUAGES = ['en', 'pl'];
@@ -37,16 +52,38 @@ export const SKILLS_ITEMS = [
     icon: <SiJest />,
   },
   {
+    title: 'node_js',
+    icon: <SiNodedotjs />,
+  },
+  {
+    title: 'express',
+    icon: <SiExpress />,
+  },
+  {
     title: 'team_player',
     icon: <AiOutlineTeam />,
   },
 ];
 
+export const CERTIFICATES_ITEMS = [
+  {
+    key: 'udemy_copilot',
+    years: '2025',
+    link: 'https://www.udemy.com/certificate/UC-48001f0c-34fa-42ae-ac4b-4f61909ca3ce/',
+  },
+  {
+    key: 'udemy_algo',
+    years: '2025',
+    link: 'https://www.udemy.com/certificate/UC-a81d14f6-010f-4d23-8f88-ac22aac6c07e/',
+  },
+  {
+    key: 'udemy_java_basic',
+    years: '2024',
+    link: 'https://www.udemy.com/certificate/UC-93de246b-999f-467c-a518-481517e3846c/',
+  },
+];
+
 export const EDUCATION_ITEMS = [
-  // {
-  //   key: 'incubator',
-  //   years: '2020 - 2020',
-  // },
   {
     key: 'bru',
     years: '2013 - 2018',
@@ -68,14 +105,21 @@ export const WORK_ITEMS = [
   },
 ];
 
+export const ADDITIONAL_ACTIVITIES_ITEMS = [
+  {
+    key: 'rsschool',
+    years: '2025 - present',
+  },
+];
+
 export const PROGRESS_ITEMS = [
   { title: 'react', value: 80 },
   { title: 'java_script', value: 80 },
   { title: 'types_script', value: 75 },
   { title: 'redux', value: 90 },
   { title: 'html_css', value: 95 },
-  { title: 'jest', value: 70 },
-  { title: 'git', value: 85 },
+  { title: 'jest', value: 80 },
+  { title: 'node_js', value: 85 },
   { title: 'webpack', value: 70 },
   { title: 'english', value: 80 },
   { title: 'polish', value: 80 },
@@ -85,16 +129,14 @@ export const PROJECTS = [
   {
     title: 'Pokedex',
     image: { backgroundImage: 'url("../../images/Pokedex.png")' },
-    description:
-      'react, redux-toolkit, typeScript, SASS, RestAPI, Jest, webpack',
+    description: 'react, redux-toolkit, typeScript, SASS, RestAPI, Jest, webpack',
     gitHub: 'https://github.com/Dergacz/Pokemon_react',
     demo: 'https://master--thriving-khapse-aac99a.netlify.app/',
   },
   {
     title: 'Calendar',
     image: { backgroundImage: 'url("../../images/calendar.png")' },
-    description:
-      'react, redux-toolkit, typeScript, ant design',
+    description: 'react, redux-toolkit, typeScript, ant design',
     gitHub: 'https://github.com/Dergacz/Calendar',
     demo: 'https://dergacz.github.io/Calendar/',
   },

@@ -1,22 +1,19 @@
-import React, { useState } from 'react';
-import { Header } from '../../components/Header/Header';
-import { IconContext } from 'react-icons';
-import { CustomButton } from '../../components/CustomButton/CustomButton';
-import * as constants from '../../constants/constants';
 import emailjs from '@emailjs/browser';
-import { CustomSnackbar } from '../../components/CustomSnackbar/CustomSnackbar';
+import React, { useState } from 'react';
 import { Zoom } from 'react-awesome-reveal';
 import { useTranslation } from 'react-i18next';
+import { IconContext } from 'react-icons';
+import { CustomButton } from '../../components/CustomButton/CustomButton';
+import { Header } from '../../components/Header/Header';
+import * as constants from '../../constants/constants';
+import { CustomSnackbar } from '../../components/CustomSnackbar/CustomSnackbar';
 
 export const Contact = () => {
   const { t } = useTranslation();
   const [isOpenSnackbar, setIsOpenSnackbar] = useState<boolean>(false);
   const [isSuccess, setIsSuccess] = useState<boolean>(false);
 
-  const handleClose = (
-    event?: React.SyntheticEvent | Event,
-    reason?: string
-  ) => {
+  const handleClose = (event?: React.SyntheticEvent | Event, reason?: string) => {
     if (reason === 'clickaway') {
       return;
     }
@@ -26,12 +23,7 @@ export const Contact = () => {
   const sendEmail = (e: any) => {
     e.preventDefault();
     emailjs
-      .sendForm(
-        constants.SERVICE_ID,
-        constants.TEMPLATE_ID,
-        e.target,
-        constants.PUBLIC_KEY
-      )
+      .sendForm(constants.SERVICE_ID, constants.TEMPLATE_ID, e.target, constants.PUBLIC_KEY)
       .then(
         () => {
           setIsSuccess(true);
@@ -55,16 +47,11 @@ export const Contact = () => {
       <div className="container">
         <Zoom cascade triggerOnce>
           <div className="contact" id="contact">
-            <Header
-              title="contact.header.title"
-              subtitle="contact.header.subtitle"
-            />
+            <Header title="contact.header.title" subtitle="contact.header.subtitle" />
             <div className="contact-wrapper">
               <div className="contact-info">
                 <h5>{t('contact.title')}</h5>
-                <IconContext.Provider
-                  value={{ color: '#20c997', size: '20px' }}
-                >
+                <IconContext.Provider value={{ color: '#20c997', size: '20px' }}>
                   {constants.CONTACT_INFO_ITEMS.map((item) => {
                     return (
                       <p className="contact-info-date" key={item.title}>
@@ -98,17 +85,12 @@ export const Contact = () => {
                     <textarea
                       className="contact-form-textarea"
                       rows={5}
-                      placeholder={`${t('contact.form.item.message' || 'Your message')}...`}
+                      placeholder={`${t('contact.form.item.message')}...`}
                       name="message"
                       required
                     />
                     <div className="contact-form-button">
-                      <CustomButton
-                        type="submit"
-                        title={t('contact.send_btn')}
-                        isFilled
-                        isGray={false}
-                      />
+                      <CustomButton type="submit" title={t('contact.send_btn')} isFilled />
                     </div>
                   </form>
                   <CustomSnackbar

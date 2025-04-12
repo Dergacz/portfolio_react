@@ -4,9 +4,7 @@ import * as constants from '../../constants/constants';
 import { ILanguages } from './Languages.types';
 
 export const Languages: FC<ILanguages> = ({ isSelectOpen, scroll }) => {
-  const [selectLanguage, setsSelectLanguage] = useState<string>(
-    constants.EN_LANGUAGE
-  );
+  const [selectLanguage, setsSelectLanguage] = useState<string>(constants.EN_LANGUAGE);
 
   const changeLanguage = (language: string) => {
     if (language === constants.EN_LANGUAGE) {
