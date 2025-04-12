@@ -1,19 +1,21 @@
 import { Snackbar } from '@mui/material';
 import { FC } from 'react';
 import { Alert } from '../Alert/Alert';
-import { ICustomSnackbar } from './CustomSnacbar.types';
+import { useMyContext } from '../Provider/Provider';
 
-export const CustomSnackbar: FC<ICustomSnackbar> = ({ isOpen, handleClose, isSuccess }) => {
+export const CustomSnackbar: FC = () => {
+  const { isOpen, isSuccess, closePopup } = useMyContext();
+
   return (
     <Snackbar
       open={isOpen}
       autoHideDuration={6000}
-      onClose={handleClose}
-      anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+      onClose={closePopup}
+      anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
       disableWindowBlurListener
     >
       <Alert
-        onClose={handleClose}
+        onClose={closePopup}
         severity={`${isSuccess ? 'success' : 'error'}`}
         sx={{ width: '100%', backgroundColor: isSuccess ? '#20c997' : '' }}
       >

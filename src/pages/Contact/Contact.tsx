@@ -1,24 +1,15 @@
 import emailjs from '@emailjs/browser';
-import React, { useState } from 'react';
 import { Zoom } from 'react-awesome-reveal';
 import { useTranslation } from 'react-i18next';
 import { IconContext } from 'react-icons';
 import { CustomButton } from '../../components/CustomButton/CustomButton';
 import { Header } from '../../components/Header/Header';
+import { useMyContext } from '../../components/Provider/Provider';
 import * as constants from '../../constants/constants';
-import { CustomSnackbar } from '../../components/CustomSnackbar/CustomSnackbar';
 
 export const Contact = () => {
   const { t } = useTranslation();
-  const [isOpenSnackbar, setIsOpenSnackbar] = useState<boolean>(false);
-  const [isSuccess, setIsSuccess] = useState<boolean>(false);
-
-  const handleClose = (event?: React.SyntheticEvent | Event, reason?: string) => {
-    if (reason === 'clickaway') {
-      return;
-    }
-    setIsOpenSnackbar(false);
-  };
+  const { setIsOpen, setIsSuccess } = useMyContext();
 
   const sendEmail = (e: any) => {
     e.preventDefault();
@@ -27,19 +18,14 @@ export const Contact = () => {
       .then(
         () => {
           setIsSuccess(true);
-          setIsOpenSnackbar(true);
+          setIsOpen(true);
         },
         () => {
           setIsSuccess(false);
-          setIsOpenSnackbar(true);
+          setIsOpen(true);
         }
       );
     e.target.reset();
-
-    const timeOutID = setTimeout(() => {}, 5000);
-    return () => {
-      clearTimeout(timeOutID);
-    };
   };
 
   return (
@@ -93,11 +79,6 @@ export const Contact = () => {
                       <CustomButton type="submit" title={t('contact.send_btn')} isFilled />
                     </div>
                   </form>
-                  <CustomSnackbar
-                    isOpen={isOpenSnackbar}
-                    handleClose={handleClose}
-                    isSuccess={isSuccess}
-                  />
                 </div>
               </div>
             </div>
