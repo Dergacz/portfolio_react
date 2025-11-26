@@ -181,6 +181,6 @@ export const CONTACT_INFO_ITEMS = [
   { icon: <FaHouseUser />, title: 'city' },
 ];
 
-export const SERVICE_ID = 'service_0v507xg';
-export const TEMPLATE_ID = 'template_ue0n2qy';
-export const PUBLIC_KEY = 'ionYqzX6dV4DjfMu2';
+export const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID || '';
+export const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || '';
+export const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || '';
